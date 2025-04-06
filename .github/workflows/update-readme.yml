@@ -1,0 +1,33 @@
+name: Update README with Blog Posts
+
+on:
+  push:
+    branches: [main]  # 如果你的主分支是 `main`，否则改为 `master`
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜运行一次
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate README content
+        run: |
+          # 获取所有 .md 文件
+          posts=$(ls *.md)
+          # 生成 README 内容
+          echo "# 我的博客" > README.md
+          echo "" >> README.md
+          echo "这里是我在 GitHub 上的博客文章列表：" >> README.md
+          echo "" >> README.md
+          for post in $posts; do
+            echo "- [$(basename "$post")](./$post)" >> README.md
+          done
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update README with blog posts"
+          branch: main  # 如果你的主分支是 `main`，否则改为 `master`
