@@ -2,9 +2,9 @@ name: Update README with Blog Posts
 
 on:
   push:
-    branches: [main]  # 如果你的主分支是 `main`，否则改为 `master`
+    branches: [main]
   schedule:
-    - cron: '0 0 * * *'  # 每天午夜运行一次
+    - cron: '0 0 * * *'
 
 jobs:
   update-readme:
@@ -15,19 +15,21 @@ jobs:
 
       - name: Generate README content
         run: |
-          # 获取所有 .md 文件
-          posts=$(ls *.md)
-          # 生成 README 内容
-          echo "# 我的博客" > README.md
-          echo "" >> README.md
-          echo "这里是我在 GitHub 上的博客文章列表：" >> README.md
-          echo "" >> README.md
-          for post in $posts; do
-            echo "- [$(basename "$post")](./$post)" >> README.md
-          done
+          posts=$(ls *.md 2>/dev/null)
+          if [ -z "$posts" ]; then
+            echo "No .md files found." > README.md
+          else
+            echo "# 我的博客" > README.md
+            echo "" >> README.md
+            echo "这里是我在 GitHub 上的博客文章列表：" >> README.md
+            echo "" >> README.md
+            for post in $posts; do
+              echo "- [$(basename "$post")](./$post)" >> README.md
+            done
+          fi
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update README with blog posts"
-          branch: main  # 如果你的主分支是 `main`，否则改为 `master`
+          branch: main
