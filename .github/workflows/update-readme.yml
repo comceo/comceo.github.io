@@ -10,6 +10,8 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 确保工作流有写入仓库内容的权限
 
     steps:
       - name: Checkout repository
