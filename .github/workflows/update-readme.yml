@@ -15,18 +15,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
       - name: Update README
         run: |
           # 获取所有 .md 文件（排除 README.md）
           md_files=$(find ./ -maxdepth 1 -name "*.md" ! -name "README.md" | sort -r)
-
-          # 确保 README.md 有写权限
-          chmod +w README.md
 
           # 生成新的 README 内容
           echo "# My Blog" > README.md
