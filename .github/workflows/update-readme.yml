@@ -29,9 +29,9 @@ jobs:
           chmod +w README.md
 
           # 生成新的 README 内容
-          echo "# My Blog" > README.md
+          echo "# 我的博客" > README.md
           echo "" >> README.md
-          echo "## Articles" >> README.md
+          echo "## 文章列表" >> README.md
           echo "" >> README.md
 
           # 为每个 .md 文件生成链接
