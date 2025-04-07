@@ -18,7 +18,10 @@ jobs:
       - name: Update README
         run: |
           # 获取所有 .md 文件（排除 README.md）
-          md_files=$(find ./ -maxdepth 1 -name "*.md" ! -name "README.md" | sort -r)
+          md_files=$(find ./ -maxdepth 1 -name "*.md" ! -name "README.md" | sort)
+
+          # 确保 README.md 有写权限
+          chmod +w README.md
 
           # 生成新的 README 内容
           echo "# My Blog" > README.md
