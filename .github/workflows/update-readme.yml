@@ -19,8 +19,8 @@ jobs:
 
       - name: Update README
         run: |
-          # 获取所有 .md 文件（排除 README.md）
-          md_files=$(find ./ -maxdepth 1 -name "*.md" ! -name "README.md" | sort)
+          # 获取所有 .md 文件（排除 README.md），并按修改时间排序（最新的排在最前面）
+          md_files=$(ls -t *.md | grep -v "README.md")
 
           # 确保 README.md 有写权限
           chmod +w README.md
@@ -33,8 +33,7 @@ jobs:
 
           # 为每个 .md 文件生成链接
           for file in $md_files; do
-            filename=$(basename "$file")
-            echo "- [${filename%.md}](${filename})" >> README.md
+            echo "- [${file%.md}]($file)" >> README.md
           done
 
       - name: Commit changes
