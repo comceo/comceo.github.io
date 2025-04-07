@@ -1,35 +1,47 @@
-name: Update README with Blog Posts
+name: Update README with MD Files
 
 on:
   push:
-    branches: [main]
-  schedule:
-    - cron: '0 0 * * *'
+    paths:
+      - "*.md"
+    branches:
+      - main
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Generate README content
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Update README
         run: |
-          posts=$(ls *.md 2>/dev/null)
-          if [ -z "$posts" ]; then
-            echo "No .md files found." > README.md
-          else
-            echo "# 我的博客" > README.md
-            echo "" >> README.md
-            echo "这里是我在 GitHub 上的博客文章列表：" >> README.md
-            echo "" >> README.md
-            for post in $posts; do
-              echo "- [$(basename "$post")](./$post)" >> README.md
-            done
-          fi
+          # 获取所有 .md 文件（排除 README.md）
+          md_files=$(find . -maxdepth 1 -name "*.md" ! -name "README.md" | sort -r)
+
+          # 生成新的 README 内容
+          echo "# My Blog" > README.md
+          echo "" >> README.md
+          echo "## Articles" >> README.md
+          echo "" >> README.md
+
+          # 为每个 .md 文件生成链接
+          for file in $md_files; do
+            filename=$(basename "$file")
+            # 提取文件名中的日期部分
+            date_part=$(echo "$filename" | grep -oE "[0-9]{4}-[0-9]{2}-[0-9]{2}")
+            # 按日期倒序排序
+            echo "- [${filename%.md}](${filename}) ($date_part)" >> README.md
+          done
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update README with blog posts"
+          commit_message: "Update README with MD files"
           branch: main
