@@ -2,7 +2,7 @@
 
 ## 文章列表
 
-- [Wildcard虚拟卡官网|一分钟注册，轻松订阅ChatGPT](Wildcard虚拟卡官网|一分钟注册，轻松订阅ChatGPT)
+- [Wildcard虚拟卡官网一分钟注册轻松订阅ChatGPT](Wildcard虚拟卡官网一分钟注册轻松订阅ChatGPT)
 - [Plus2025-04-12](Plus2025-04-12.md)
 - [升级订阅海外线上AI服务用安全可靠的Wildcard虚拟卡2025-04-11](升级订阅海外线上AI服务用安全可靠的Wildcard虚拟卡2025-04-11.md)
 - [vCard官方注册地址及虚拟卡办理流程2025-04-09](vCard官方注册地址及虚拟卡办理流程2025-04-09.md)
