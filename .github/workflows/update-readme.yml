@@ -22,8 +22,8 @@ jobs:
           # 获取所有 .md 文件（排除 README.md）
           md_files=$(ls *.md | grep -v "README.md")
 
-          # 提取文件名中的日期部分并按日期排序（最新的排在最前面）
-          sorted_files=$(echo "$md_files" | sort -r -t '-' -k 2)
+          # 按文件名的字母顺序排序
+          sorted_files=$(echo "$md_files" | sort)
 
           # 确保 README.md 有写权限
           chmod +w README.md
