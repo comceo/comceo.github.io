@@ -1,4 +1,4 @@
-# Wildcard虚拟卡官网|一分钟注册，轻松订阅ChatGPT Plus
+# Wildcard虚拟卡官网，一分钟注册，轻松订阅ChatGPT Plus
 
 #### 一、ChatGPT Plus订阅痛点与解决方案
 
