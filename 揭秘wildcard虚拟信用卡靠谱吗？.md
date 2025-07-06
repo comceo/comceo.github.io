@@ -4,7 +4,7 @@
 
 ## 一、WildCard核心功能：直击订阅痛点
 
-WildCard官网[WildCard | 一分钟注册，轻松订阅海外线上服务](https://bewildcard.com/i/MASK)明确标注了其核心优势——专为解决海外服务订阅难题而生。其主打功能包括：
+WildCard官网[WildCard | 一分钟注册，轻松订阅海外线上服务](https://bewildcard.com/i/DFG)明确标注了其核心优势——专为解决海外服务订阅难题而生。其主打功能包括：
 
 1. **全自动订阅ChatGPT Plus**：支持同时为4个ChatGPT Plus账户订阅，且官方承诺“订阅失败全额退款”。对于需要多账户协作或管理的用户而言，这一功能既提升了效率，又降低了试错成本。
 2. **多平台覆盖**：除OpenAI生态（如ChatGPT、API接口）外，还支持Apple Store美区、Midjourney、Patreon、Netflix等超50+海外SaaS平台及流媒体服务，满足用户多样化需求。
