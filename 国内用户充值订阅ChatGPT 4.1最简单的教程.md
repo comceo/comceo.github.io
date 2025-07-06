@@ -5,7 +5,7 @@
 ### **步骤1：注册Wildcard账号**
 
 1. **访问官网**  
-  访问wildcard官网[WildCard | 一分钟注册，轻松订阅海外线上服务](https://bewildcard.com/i/CEO)，点击右上角“Sign Up”注册。  
+  访问wildcard官网[WildCard | 一分钟注册，轻松订阅海外线上服务](https://bewildcard.com/i/DFG)，点击右上角“Sign Up”注册。  
   *注：若官网加载缓慢，可尝试更换网络环境或时段。*
   
 2. **填写信息**  
