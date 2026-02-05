@@ -3,77 +3,743 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 网页标题 -->
-    <title>银河录像局 - AI应用服务代充与合租平台</title>
-    <!-- 网页描述 -->
-    <meta name="description" content="银河录像局提供AI应用服务代充和合租平台，满足用户对AI服务的多样化需求，包括但不限于AI工具代充、AI资源共享等。">
-    <!-- 网页关键词 -->
-    <meta name="keywords" content="AI应用代充, AI资源共享, 合租平台, AI工具, AI服务">
-    <!-- Open Graph 标记 -->
-    <meta property="og:title" content="银河录像局 - AI应用服务代充与合租平台">
-    <meta property="og:description" content="银河录像局提供AI应用服务代充和合租平台，满足用户对AI服务的多样化需求，包括但不限于AI工具代充、AI资源共享等。">
-    <meta property="og:image" content="https://nf.video-logo.svg">
+    <title>银河录像局 | AI应用服务代充与合租平台 - 安全便捷的AI工具订阅服务</title>
+    <meta name="description" content="银河录像局是专业的AI应用服务代充与合租平台，提供ChatGPT Plus、Midjourney、Claude等AI工具代充服务，支持账号合租，价格低至官方3折，安全稳定，即时到账。">
+    <meta name="keywords" content="AI代充,ChatGPT Plus代充,Midjourney合租,AI工具订阅,Claude订阅,AI账号合租,AI服务代充,银河录像局">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://nf.video/Y7SG6">
-    <!-- 添加 Schema.org 结构化数据标记 -->
+    <meta property="og:title" content="银河录像局 - 专业AI应用代充与合租平台">
+    <meta property="og:description" content="提供ChatGPT Plus、Midjourney等AI工具代充与合租服务，安全稳定，价格优惠">
+    <meta property="og:image" content="https://nf.video-logo.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nf.video/Y7SG6">
+    <meta property="twitter:title" content="银河录像局 - 专业AI应用代充与合租平台">
+    <meta property="twitter:description" content="提供ChatGPT Plus、Midjourney等AI工具代充与合租服务，安全稳定，价格优惠">
+    <meta property="twitter:image" content="https://nf.video-logo.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nf.video/Y7SG6">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://nf.video-logo.svg">
+    
+    <!-- Schema.org 结构化数据 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "银河录像局-AI应用服务代充与合租平台",
-      "description": "银河录像局提供AI应用服务代充和合租平台，满足用户对AI服务的多样化需求，包括但不限于AI工具代充、AI资源共享等。",
-      "image": "https://nf.video-logo.svg",
-      "url": "https://nf.video/Y7SG6"
+      "@type": "WebSite",
+      "name": "银河录像局",
+      "url": "https://nf.video/Y7SG6",
+      "description": "专业的AI应用服务代充与合租平台",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://nf.video/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "银河录像局",
+      "url": "https://nf.video/Y7SG6",
+      "logo": "https://nf.video-logo.svg",
+      "description": "提供AI应用服务代充和合租平台",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "客户服务",
+        "availableLanguage": "Chinese"
+      }
+    }
+    </script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            color: #333;
+        :root {
+            --primary-color: #6366f1;
+            --primary-hover: #4f46e5;
+            --secondary-color: #06b6d4;
+            --accent-color: #8b5cf6;
+            --bg-dark: #0f172a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
         }
-        .container {
-            max-width: 800px;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 动态背景 */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            animation: bgPulse 15s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 导航栏 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* 主要内容区 */
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.2);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            color: var(--primary-color);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        /* CTA按钮 */
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--primary-color);
+        }
+
+        /* 特性卡片 */
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
             margin: 0 auto;
         }
-        header {
+
+        .section-title {
             text-align: center;
-            margin-bottom: 30px;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
         }
-        h1 {
-            color: #2c3e50;
-            font-size: 24px;
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
-        a {
-            color: #007bff;
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* 服务展示区 */
+        .services {
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .services-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateX(10px);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .service-info h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .service-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .service-price {
+            margin-left: auto;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* 注册引导区 */
+        .cta-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-box {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        /* 页脚 */
+        footer {
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .qr-container {
+            display: inline-block;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .qr-container img {
+            width: 180px;
+            height: 180px;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .qr-label {
+            margin-top: 0.75rem;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
             text-decoration: none;
+            transition: color 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* 动画 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero {
+                margin-top: 60px;
+                padding: 2rem 1rem;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .service-icon {
+                margin-right: 0;
+            }
+            
+            .service-price {
+                margin-left: 0;
+            }
+            
+            .steps {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-hover);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>银河录像局简介</h1>
-            <p>银河录像局是一个专注于AI应用服务代充和合租的平台，提供AI工具代充服务，帮助用户更便捷地使用各类AI服务。同时，平台也提供AI资源共享和合租服务，让用户能够以更经济的方式享受AI带来的便利。</p>
-        </header>
-        <main>
-            <article>
-                <h3>银河录像局平台优势</h3>
-                <p>专业服务：我们拥有专业的技术团队，确保代充服务的安全性和可靠性；资源共享：提供丰富的AI资源共享，满足不同用户的需求；经济实惠：通过合租服务，让用户以更低的成本享受AI服务；安全保障：严格的数据保护措施，确保用户信息安全。</p>
+    <div class="bg-animation"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">银河录像局</div>
+            <a href="https://nf.video/Y7SG6" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">立即访问</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge">🚀 安全稳定的AI服务平台</div>
+        <h1>银河录像局<br>AI应用服务代充与合租平台</h1>
+        <p class="hero-subtitle">
+            专业提供 ChatGPT Plus、Midjourney、Claude 等热门AI工具代充与账号合租服务，
+            价格低至官方3折，即时到账，安全稳定
+        </p>
+        <div class="cta-group">
+            <a href="https://nf.video/Y7SG6" class="btn btn-primary">
+                <span>立即注册</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary">了解更多</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title">为什么选择银河录像局？</h2>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>安全可靠</h3>
+                <p>采用企业级加密技术，严格的数据保护措施，确保您的账户和支付信息安全无忧</p>
             </article>
-            <article>
-                <h3>银河录像局注册与使用指南</h3>
-                <p>点击下面的链接进入银河录像局注册页面，输入常用邮箱或手机号，填写验证码及设置密码，即可完成注册。注册成功后，您可以选择AI应用服务代充或合租服务。</p>
-                <a href="https://nf.video/Y7SG6">银河录像局注册入口</a>
+            <article class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>即时到账</h3>
+                <p>自动化处理系统，付款后秒级到账，无需等待，即刻享受AI服务</p>
             </article>
-        </main>
-    </div>
-    <footer style="text-align: center; margin-top: 30px;">
-        <img src="images/qq1.jpg" alt="银河录像局二维码" style="width: 200px; height: 200px; margin: 0 auto; display: block;">
+            <article class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>价格实惠</h3>
+                <p>合租模式分摊成本，代充服务免去了海外支付的繁琐，价格低至官方3折</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">🛠️</div>
+                <h3>专业团队</h3>
+                <p>7×24小时技术支持，专业客服团队随时解答疑问，保障服务稳定运行</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-container">
+            <h2 class="section-title">热门服务</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-icon">🤖</div>
+                    <div class="service-info">
+                        <h4>ChatGPT Plus 代充</h4>
+                        <p>官方正版订阅，支持GPT-4、DALL-E 3等全部功能</p>
+                    </div>
+                    <div class="service-price">优惠价格</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🎨</div>
+                    <div class="service-info">
+                        <h4>Midjourney 合租</h4>
+                        <p>共享Pro账号，无限出图，支持V6版本</p>
+                    </div>
+                    <div class="service-price">低至¥30/月</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">💬</div>
+                    <div class="service-info">
+                        <h4>Claude Pro 订阅</h4>
+                        <p>Anthropic官方订阅，长文本处理能力更强</p>
+                    </div>
+                    <div class="service-price">稳定供应</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🔮</div>
+                    <div class="service-info">
+                        <h4>更多AI工具</h4>
+                        <p>Grammarly、Notion AI、Perplexity等数十种AI服务</p>
+                    </div>
+                    <div class="service-price">持续更新</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <div class="cta-content">
+                <h2>开始使用银河录像局</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    三步轻松完成注册，即刻享受AI服务
+                </p>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <span>点击注册</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span>验证邮箱</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span>选择服务</span>
+                    </div>
+                </div>
+                <a href="https://nf.video/Y7SG6" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem;">
+                    立即注册银河录像局
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                    已有数千用户信赖的选择
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="qr-container">
+            <img src="images/qq1.jpg" alt="银河录像局客服二维码 - 扫码联系客服">
+            <div class="qr-label">扫码联系客服</div>
+        </div>
+        <div class="footer-links">
+            <a href="https://nf.video/Y7SG6">官网入口</a>
+            <a href="#features">服务介绍</a>
+            <a href="mailto:support@nf.video">联系我们</a>
+        </div>
+        <p class="copyright">
+            © 2024 银河录像局 nf.video. All rights reserved. | 
+            <span itemscope itemtype="https://schema.org/Organization">
+                <meta itemprop="name" content="银河录像局">
+            </span>
+        </p>
     </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // 滚动显示动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .service-item').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
