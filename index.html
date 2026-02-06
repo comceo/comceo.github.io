@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>银河录像局 | AI应用服务代充与合租平台 - 安全便捷的AI工具订阅服务</title>
+    <title>银河录像局 | AI应用服务代充与合租平台</title>
     <meta name="description" content="银河录像局是专业的AI应用服务代充与合租平台，提供ChatGPT Plus、Midjourney、Claude等AI工具代充服务，支持账号合租，价格低至官方3折，安全稳定，即时到账。">
     <meta name="keywords" content="AI代充,ChatGPT Plus代充,Midjourney合租,AI工具订阅,Claude订阅,AI账号合租,AI服务代充,银河录像局">
     
@@ -108,40 +108,9 @@
             50% { opacity: 0.8; }
         }
 
-        /* 导航栏 */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* 主要内容区 */
+        /* 主要内容区 - 移除导航栏后调整顶部间距 */
         .hero {
-            margin-top: 80px;
-            padding: 4rem 2rem;
+            padding: 4rem 2rem;  /* 移除 margin-top: 80px，改为直接从顶部开始 */
             text-align: center;
             position: relative;
         }
@@ -506,8 +475,7 @@
         /* 响应式 */
         @media (max-width: 768px) {
             .hero {
-                margin-top: 60px;
-                padding: 2rem 1rem;
+                padding: 2rem 1rem;  /* 移动端也相应调整 */
             }
             
             .cta-group {
@@ -567,12 +535,7 @@
 <body>
     <div class="bg-animation"></div>
     
-    <nav>
-        <div class="nav-container">
-            <div class="logo">银河录像局</div>
-            <a href="https://nf.video/Y7SG6" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">立即访问</a>
-        </div>
-    </nav>
+    <!-- 导航栏已移除 -->
 
     <section class="hero">
         <div class="hero-badge">🚀 安全稳定的AI服务平台</div>
@@ -700,7 +663,7 @@
             <a href="mailto:support@nf.video">联系我们</a>
         </div>
         <p class="copyright">
-            © 2024 银河录像局 nf.video. All rights reserved. | 
+            
             <span itemscope itemtype="https://schema.org/Organization">
                 <meta itemprop="name" content="银河录像局">
             </span>
