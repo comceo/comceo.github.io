@@ -7,49 +7,55 @@
     <meta name="description" content="银河录像局是专业的AI应用服务代充与合租平台，提供ChatGPT Plus、Midjourney、Claude等AI工具代充服务，支持账号合租，价格低至官方3折，安全稳定，即时到账。">
     <meta name="keywords" content="AI代充,ChatGPT Plus代充,Midjourney合租,AI工具订阅,Claude订阅,AI账号合租,AI服务代充,银河录像局">
     
+    <!-- Robots - 允许所有搜索引擎索引 -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nf.video/Y7SG6">
+    <meta property="og:url" content="https://comceo.github.io/">
     <meta property="og:title" content="银河录像局 - 专业AI应用代充与合租平台">
     <meta property="og:description" content="提供ChatGPT Plus、Midjourney等AI工具代充与合租服务，安全稳定，价格优惠">
-    <meta property="og:image" content="https://nf.video-logo.svg">
+    <meta property="og:image" content="https://comceo.github.io/images/logo.svg">
+    <meta property="og:site_name" content="银河录像局">
+    <meta property="og:locale" content="zh_CN">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nf.video/Y7SG6">
+    <meta property="twitter:url" content="https://comceo.github.io/">
     <meta property="twitter:title" content="银河录像局 - 专业AI应用代充与合租平台">
     <meta property="twitter:description" content="提供ChatGPT Plus、Midjourney等AI工具代充与合租服务，安全稳定，价格优惠">
-    <meta property="twitter:image" content="https://nf.video-logo.svg">
+    <meta property="twitter:image" content="https://comceo.github.io/images/logo.svg">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://nf.video/Y7SG6">
+    <!-- Canonical URL - 改为自引用 -->
+    <link rel="canonical" href="https://comceo.github.io/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="https://nf.video-logo.svg">
+    <link rel="icon" type="image/svg+xml" href="https://comceo.github.io/images/logo.svg">
     
-    <!-- Schema.org 结构化数据 -->
+    <!-- Schema.org 结构化数据 - 网站 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "银河录像局",
-      "url": "https://nf.video/Y7SG6",
+      "url": "https://comceo.github.io/",
       "description": "专业的AI应用服务代充与合租平台",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://nf.video/search?q={search_term_string}",
+        "target": "https://comceo.github.io/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
     </script>
     
+    <!-- Schema.org 结构化数据 - 组织 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "银河录像局",
-      "url": "https://nf.video/Y7SG6",
-      "logo": "https://nf.video-logo.svg",
+      "url": "https://comceo.github.io/",
+      "logo": "https://comceo.github.io/images/logo.svg",
       "description": "提供AI应用服务代充和合租平台",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -108,9 +114,9 @@
             50% { opacity: 0.8; }
         }
 
-        /* 主要内容区 - 移除导航栏后调整顶部间距 */
+        /* 主要内容区 */
         .hero {
-            padding: 4rem 2rem;  /* 移除 margin-top: 80px，改为直接从顶部开始 */
+            padding: 4rem 2rem;
             text-align: center;
             position: relative;
         }
@@ -475,7 +481,7 @@
         /* 响应式 */
         @media (max-width: 768px) {
             .hero {
-                padding: 2rem 1rem;  /* 移动端也相应调整 */
+                padding: 2rem 1rem;
             }
             
             .cta-group {
@@ -534,8 +540,6 @@
 </head>
 <body>
     <div class="bg-animation"></div>
-    
-    <!-- 导航栏已移除 -->
 
     <section class="hero">
         <div class="hero-badge">🚀 安全稳定的AI服务平台</div>
@@ -545,7 +549,7 @@
             价格低至官方3折，即时到账，安全稳定
         </p>
         <div class="cta-group">
-            <a href="https://nf.video/Y7SG6" class="btn btn-primary">
+            <a href="https://nf.video/Y7SG6" class="btn btn-primary" rel="nofollow">
                 <span>立即注册</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -558,25 +562,25 @@
     <section class="features" id="features">
         <h2 class="section-title">为什么选择银河录像局？</h2>
         <div class="feature-grid">
-            <article class="feature-card">
+            <article class="feature-card" itemscope itemtype="https://schema.org/Service">
                 <div class="feature-icon">🔒</div>
-                <h3>安全可靠</h3>
-                <p>采用企业级加密技术，严格的数据保护措施，确保您的账户和支付信息安全无忧</p>
+                <h3 itemprop="name">安全可靠</h3>
+                <p itemprop="description">采用企业级加密技术，严格的数据保护措施，确保您的账户和支付信息安全无忧</p>
             </article>
-            <article class="feature-card">
+            <article class="feature-card" itemscope itemtype="https://schema.org/Service">
                 <div class="feature-icon">⚡</div>
-                <h3>即时到账</h3>
-                <p>自动化处理系统，付款后秒级到账，无需等待，即刻享受AI服务</p>
+                <h3 itemprop="name">即时到账</h3>
+                <p itemprop="description">自动化处理系统，付款后秒级到账，无需等待，即刻享受AI服务</p>
             </article>
-            <article class="feature-card">
+            <article class="feature-card" itemscope itemtype="https://schema.org/Service">
                 <div class="feature-icon">💰</div>
-                <h3>价格实惠</h3>
-                <p>合租模式分摊成本，代充服务免去了海外支付的繁琐，价格低至官方3折</p>
+                <h3 itemprop="name">价格实惠</h3>
+                <p itemprop="description">合租模式分摊成本，代充服务免去了海外支付的繁琐，价格低至官方3折</p>
             </article>
-            <article class="feature-card">
+            <article class="feature-card" itemscope itemtype="https://schema.org/Service">
                 <div class="feature-icon">🛠️</div>
-                <h3>专业团队</h3>
-                <p>7×24小时技术支持，专业客服团队随时解答疑问，保障服务稳定运行</p>
+                <h3 itemprop="name">专业团队</h3>
+                <p itemprop="description">7×24小时技术支持，专业客服团队随时解答疑问，保障服务稳定运行</p>
             </article>
         </div>
     </section>
@@ -585,35 +589,40 @@
         <div class="services-container">
             <h2 class="section-title">热门服务</h2>
             <div class="service-list">
-                <div class="service-item">
+                <div class="service-item" itemscope itemtype="https://schema.org/Product">
                     <div class="service-icon">🤖</div>
                     <div class="service-info">
-                        <h4>ChatGPT Plus 代充</h4>
-                        <p>官方正版订阅，支持GPT-4、DALL-E 3等全部功能</p>
+                        <h4 itemprop="name">ChatGPT Plus 代充</h4>
+                        <p itemprop="description">官方正版订阅，支持GPT-4、DALL-E 3等全部功能</p>
                     </div>
-                    <div class="service-price">优惠价格</div>
+                    <div class="service-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="price">优惠价格</span>
+                    </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item" itemscope itemtype="https://schema.org/Product">
                     <div class="service-icon">🎨</div>
                     <div class="service-info">
-                        <h4>Midjourney 合租</h4>
-                        <p>共享Pro账号，无限出图，支持V6版本</p>
+                        <h4 itemprop="name">Midjourney 合租</h4>
+                        <p itemprop="description">共享Pro账号，无限出图，支持V6版本</p>
                     </div>
-                    <div class="service-price">低至¥30/月</div>
+                    <div class="service-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="price" content="30">低至¥30/月</span>
+                        <meta itemprop="priceCurrency" content="CNY">
+                    </div>
                 </div>
-                <div class="service-item">
+                <div class="service-item" itemscope itemtype="https://schema.org/Product">
                     <div class="service-icon">💬</div>
                     <div class="service-info">
-                        <h4>Claude Pro 订阅</h4>
-                        <p>Anthropic官方订阅，长文本处理能力更强</p>
+                        <h4 itemprop="name">Claude Pro 订阅</h4>
+                        <p itemprop="description">Anthropic官方订阅，长文本处理能力更强</p>
                     </div>
                     <div class="service-price">稳定供应</div>
                 </div>
-                <div class="service-item">
+                <div class="service-item" itemscope itemtype="https://schema.org/Product">
                     <div class="service-icon">🔮</div>
                     <div class="service-info">
-                        <h4>更多AI工具</h4>
-                        <p>Grammarly、Notion AI、Perplexity等数十种AI服务</p>
+                        <h4 itemprop="name">更多AI工具</h4>
+                        <p itemprop="description">Grammarly、Notion AI、Perplexity等数十种AI服务</p>
                     </div>
                     <div class="service-price">持续更新</div>
                 </div>
@@ -642,7 +651,7 @@
                         <span>选择服务</span>
                     </div>
                 </div>
-                <a href="https://nf.video/Y7SG6" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem;">
+                <a href="https://nf.video/Y7SG6" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem;" rel="nofollow">
                     立即注册银河录像局
                 </a>
                 <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
@@ -658,14 +667,15 @@
             <div class="qr-label">扫码联系客服</div>
         </div>
         <div class="footer-links">
-            <a href="https://nf.video/Y7SG6">官网入口</a>
+            <a href="https://comceo.github.io/">官网首页</a>
             <a href="#features">服务介绍</a>
             <a href="mailto:support@nf.video">联系我们</a>
         </div>
         <p class="copyright">
-            
+            &copy; 2026 comceo. All rights reserved. | 
             <span itemscope itemtype="https://schema.org/Organization">
                 <meta itemprop="name" content="银河录像局">
+                <meta itemprop="url" content="https://comceo.github.io/">
             </span>
         </p>
     </footer>
