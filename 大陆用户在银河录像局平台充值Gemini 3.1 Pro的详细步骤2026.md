@@ -6,7 +6,7 @@ Google Gemini 3.1 Pro 是目前最先进的AI大模型之一，具备200万token
 
 ## 二、银河录像局平台简介
 
-银河录像局成立于2019年，拥有正规ICP备案和经营许可证，是国内领先的AI工具与流媒体服务合租/代充平台。平台支持ChatGPT Plus、Claude、Midjourney、Gemini、Netflix等多种服务，采用官方渠道充值，全程加密，安全可靠。
+银河录像局<https://nf.video/Y7SG6>成立于2019年，拥有正规ICP备案和经营许可证，是国内领先的AI工具与流媒体服务合租/代充平台。平台支持ChatGPT Plus、Claude、Midjourney、Gemini、Netflix等多种服务，采用官方渠道充值，全程加密，安全可靠。
 
 **平台优势：**
 
