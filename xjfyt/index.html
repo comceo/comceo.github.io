@@ -1,1 +1,1040 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 基础SEO设置 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星际放映厅 - 专业流媒体合租与AI工具代充平台 | 稳定可靠</title>
+    <meta name="description" content="星际放映厅提供ChatGPT Plus代充、SuperGrok账号购买、Gemini Pro账号购买等专业服务。稳定可靠，价格透明，立即开通您的AI之旅。">
+    <meta name="keywords" content="ChatGPT Plus代充,SuperGrok购买,Gemini Pro账号,AI工具代充,流媒体合租,OpenAI代充">
+    <meta name="author" content="星际放映厅">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / 社交媒体优化 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://comceo.github.io/xjfyt/">
+    <meta property="og:title" content="星际放映厅 - 专业流媒体合租与AI工具代充平台">
+    <meta property="og:description" content="提供ChatGPT Plus、SuperGrok、Gemini Pro等AI工具代充服务，稳定可靠，价格透明。">
+    <meta property="og:image" content="https://comceo.github.io/xjfyt/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://comceo.github.io/xjfyt/">
+    <meta property="twitter:title" content="星际放映厅 - 专业AI工具代充平台">
+    <meta property="twitter:description" content="ChatGPT Plus代充、SuperGrok、Gemini Pro账号购买，专业服务值得信赖。">
+    <meta property="twitter:image" content="https://comceo.github.io/xjfyt/og-image.jpg">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    
+    <!-- 结构化数据 / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "星际放映厅",
+        "url": "https://comceo.github.io/xjfyt/",
+        "description": "专业流媒体合租与AI工具代充平台",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://comceo.github.io/xjfyt/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "星际放映厅",
+        "url": "https://comceo.github.io/xjfyt/",
+        "logo": "https://comceo.github.io/xjfyt/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": ["Chinese"]
+        }
+    }
+    </script>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-glow: #00d4ff;
+            --secondary-glow: #9d4edd;
+            --accent-gold: #ffd700;
+            --bg-dark: #0a0a0f;
+            --bg-card: rgba(20, 20, 35, 0.6);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --border-glow: rgba(0, 212, 255, 0.3);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* 星空背景动画 */
+        .stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle var(--duration) ease-in-out infinite;
+            opacity: 0;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: var(--opacity); transform: scale(1); }
+        }
+
+        .shooting-star {
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            animation: shoot 3s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes shoot {
+            0% { transform: translateX(-100px) translateY(100px) rotate(-45deg); opacity: 1; }
+            100% { transform: translateX(100vw) translateY(-100px) rotate(-45deg); opacity: 0; }
+        }
+
+        /* 导航栏 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glow);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            filter: drop-shadow(0 0 10px var(--primary-glow));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* 主视觉区域 */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 5% 4rem;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid var(--border-glow);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--primary-glow);
+            margin-bottom: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4); }
+            50% { box-shadow: 0 0 20px 5px rgba(0, 212, 255, 0.2); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--primary-glow) 50%, var(--secondary-glow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .btn-primary {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.5);
+        }
+
+        .btn-secondary {
+            padding: 1rem 2.5rem;
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-glow);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: var(--primary-glow);
+            transform: translateY(-3px);
+        }
+
+        /* 特性区域 */
+        .features {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--border-glow);
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* 产品展示区域 */
+        .products {
+            padding: 6rem 5%;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 212, 255, 0.03) 50%, transparent 100%);
+        }
+
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .product-card {
+            background: var(--bg-card);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 25px 80px rgba(0, 212, 255, 0.2);
+            border-color: var(--border-glow);
+        }
+
+        .product-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(157, 78, 221, 0.1));
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .product-logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .product-tag {
+            font-size: 0.8rem;
+            color: var(--primary-glow);
+            background: rgba(0, 212, 255, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .product-body {
+            padding: 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-desc {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .product-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .product-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-glow);
+            font-weight: bold;
+        }
+
+        .product-footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .price span {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .btn-buy {
+            padding: 0.8rem 1.8rem;
+            background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .btn-buy:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 25px rgba(0, 212, 255, 0.4);
+        }
+
+        /* 数据统计区域 */
+        .stats {
+            padding: 4rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        footer {
+            padding: 4rem 5% 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-glow);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom a {
+            color: var(--primary-glow);
+            text-decoration: none;
+        }
+
+        /* 滚动动画 */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+                width: 100%;
+                padding: 0 1rem;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 加载动画 */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-circle {
+            width: 60px;
+            height: 60px;
+            border: 3px solid rgba(0, 212, 255, 0.1);
+            border-top-color: var(--primary-glow);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- 星空背景 -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#" class="logo">
+            <span class="logo-icon">🌌</span>
+            <span>星际放映厅</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#products">产品服务</a></li>
+            <li><a href="#features">优势特点</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主视觉区域 -->
+    <section class="hero" id="home">
+        <div class="hero-badge">
+            <span>✨</span>
+            <span>专业AI工具代充服务平台</span>
+        </div>
+        <h1>开启您的星际AI之旅</h1>
+        <p class="hero-subtitle">
+            提供ChatGPT Plus、SuperGrok、Gemini Pro等专业AI工具代充服务。
+            <br>稳定可靠，价格透明，让您轻松体验最前沿的人工智能技术。
+        </p>
+        <div class="cta-group">
+            <a href="#products" class="btn-primary">
+                <span>🚀</span>
+                <span>立即开通</span>
+            </a>
+            <a href="#features" class="btn-secondary">
+                <span>了解更多</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="stats scroll-reveal">
+        <div class="stat-item">
+            <h4>5000+</h4>
+            <p>服务用户</p>
+        </div>
+        <div class="stat-item">
+            <h4>99.9%</h4>
+            <p>稳定运行</p>
+        </div>
+        <div class="stat-item">
+            <h4>24/7</h4>
+            <p>全天候支持</p>
+        </div>
+        <div class="stat-item">
+            <h4>即时</h4>
+            <p>自动充值</p>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section class="products" id="products">
+        <div class="products-container">
+            <h2 class="section-title scroll-reveal">热门服务</h2>
+            <div class="products-grid">
+                <!-- ChatGPT Plus -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-header">
+                        <div class="product-logo">🤖</div>
+                        <div class="product-info">
+                            <h3>ChatGPT Plus</h3>
+                            <span class="product-tag">官方代充</span>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-desc">
+                            给您自己的账号升级为ChatGPT Plus，可用最新的GPT-4模型，享受更快的响应速度和优先访问权。
+                        </p>
+                        <ul class="product-features">
+                            <li>使用GPT-4、GPT-4o等最新模型</li>
+                            <li>可用Codex编程助手</li>
+                            <li>可用Sora视频生成</li>
+                            <li>高峰时段优先响应</li>
+                            <li>官方正规渠道，安全可靠</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price">¥129<span>/月起</span></div>
+                            <a href="#" class="btn-buy">立即购买 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SuperGrok -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-header">
+                        <div class="product-logo">🚀</div>
+                        <div class="product-info">
+                            <h3>SuperGrok</h3>
+                            <span class="product-tag">马斯克AI</span>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-desc">
+                            马斯克公司开发的一款AI工具，可用最新的Grok模型，专为需要深度搜索和增强推理功能的用户设计。
+                        </p>
+                        <ul class="product-features">
+                            <li>使用最新Grok-2模型</li>
+                            <li>深度搜索功能</li>
+                            <li>增强推理能力</li>
+                            <li>适合研究或创意应用</li>
+                            <li>现成账号，即买即用</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price">¥77.6<span>/月起</span></div>
+                            <a href="#" class="btn-buy">立即购买 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gemini Pro -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-header">
+                        <div class="product-logo">✨</div>
+                        <div class="product-info">
+                            <h3>Gemini Pro</h3>
+                            <span class="product-tag">Google AI</span>
+                        </div>
+                    </div>
+                    <div class="product-body">
+                        <p class="product-desc">
+                            Google开发的先进AI模型，提供现成的Google AI Pro账号，体验强大的多模态AI能力。
+                        </p>
+                        <ul class="product-features">
+                            <li>Google官方Pro账号</li>
+                            <li>多模态理解能力</li>
+                            <li>强大的代码生成</li>
+                            <li>与Google服务深度集成</li>
+                            <li>即买即用，无需等待</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="price">¥150<span>/月起</span></div>
+                            <a href="#" class="btn-buy">立即购买 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性展示 -->
+    <section class="features" id="features">
+        <h2 class="section-title scroll-reveal">为什么选择星际放映厅</h2>
+        <div class="features-grid">
+            <div class="feature-card scroll-reveal">
+                <span class="feature-icon">⚡</span>
+                <h3>即时开通</h3>
+                <p>自动化处理系统，付款后秒级开通，无需漫长等待，立即享受AI服务。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <span class="feature-icon">🛡️</span>
+                <h3>安全可靠</h3>
+                <p>采用官方正规渠道充值，保障账号安全，提供完善的售后服务和技术支持。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <span class="feature-icon">💰</span>
+                <h3>价格透明</h3>
+                <p>明码标价，无隐藏费用，相比官方渠道更优惠，性价比极高。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <span class="feature-icon">🎯</span>
+                <h3>专业团队</h3>
+                <p>多年AI工具服务经验，7×24小时在线客服，随时解答您的疑问。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <span class="feature-icon">🔄</span>
+                <h3>自动续费</h3>
+                <p>支持自动续费功能，服务到期前自动提醒，确保服务不中断。</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <span class="feature-icon">📱</span>
+                <h3>全平台支持</h3>
+                <p>支持Web、iOS、Android等全平台使用，随时随地访问AI服务。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">
+                    星际放映厅是专业的AI工具代充服务平台，致力于为用户提供便捷、安全、优惠的AI服务体验。
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#home">🏠 首页</a></li>
+                    <li><a href="#products">🛍️ 产品服务</a></li>
+                    <li><a href="#features">⭐ 优势特点</a></li>
+                    <li><a href="#">📋 使用教程</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="#">💬 在线客服</a></li>
+                    <li><a href="#">📧 邮件支持</a></li>
+                    <li><a href="#">💭 微信咨询</a></li>
+                    <li><a href="#">📱 Telegram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>服务保障</h4>
+                <ul>
+                    <li><a href="#">🔒 隐私政策</a></li>
+                    <li><a href="#">📄 服务条款</a></li>
+                    <li><a href="#">❓ 常见问题</a></li>
+                    <li><a href="#">🔄 退款政策</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 星际放映厅 (Star Cinema) | 保留所有权利 | 由 <a href="https://github.com/comceo" target="_blank">comceo</a> 构建</p>
+        </div>
+    </footer>
+
+    <script>
+        // 页面加载完成后隐藏加载动画
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 500);
+        });
+
+        // 生成星空背景
+        function createStars() {
+            const container = document.getElementById('stars');
+            const starCount = 150;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // 随机位置和大小
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                const size = Math.random() * 3 + 1;
+                const duration = Math.random() * 3 + 2;
+                const opacity = Math.random() * 0.8 + 0.2;
+                const delay = Math.random() * 5;
+                
+                star.style.left = `${x}%`;
+                star.style.top = `${y}%`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.setProperty('--duration', `${duration}s`);
+                star.style.setProperty('--opacity', opacity);
+                star.style.animationDelay = `${delay}s`;
+                
+                container.appendChild(star);
+            }
+            
+            // 添加流星
+            setInterval(() => {
+                const shootingStar = document.createElement('div');
+                shootingStar.className = 'shooting-star';
+                shootingStar.style.top = `${Math.random() * 50}%`;
+                shootingStar.style.left = `${Math.random() * 50}%`;
+                container.appendChild(shootingStar);
+                
+                setTimeout(() => {
+                    shootingStar.remove();
+                }, 3000);
+            }, 8000);
+        }
+
+        createStars();
+
+        // 滚动显示动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // 导航栏滚动效果
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                nav.style.background = 'rgba(10, 10, 15, 0.95)';
+                nav.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.3)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 15, 0.8)';
+                nav.style.boxShadow = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 购买按钮点击提示
+        document.querySelectorAll('.btn-buy').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                // 这里可以添加实际的购买逻辑
+                alert('感谢您的关注！请联系客服完成购买。');
+            });
+        });
+    </script>
+</body>
+</html>
