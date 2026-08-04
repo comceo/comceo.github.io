@@ -2,7 +2,7 @@
 
 ## 前言
 
-Claude 作为 Anthropic 公司开发的先进 AI 助手，凭借其出色的推理能力和安全性设计，已成为 ChatGPT 的重要替代选择。然而，由于 Claude 官方订阅（Claude Pro）需要使用海外支付方式，国内用户往往面临支付门槛。星际放映厅作为国内知名的虚拟商品代充平台，为用户提供了便捷的 Claude 订阅解决方案。本文将详细介绍如何通过星际放映厅完成 Claude 代充。星际放映厅官网入口：<https://www.naifeistation.com/i/EJYCBJ>
+Claude 作为 Anthropic 公司开发的先进 AI 助手，凭借其出色的推理能力和安全性设计，已成为 ChatGPT 的重要替代选择。然而，由于 Claude 官方订阅（Claude Pro）需要使用海外支付方式，国内用户往往面临支付门槛。星际放映厅作为国内知名的虚拟商品代充平台，为用户提供了便捷的 Claude 订阅解决方案。本文将详细介绍如何通过星际放映厅完成 Claude 代充。星际放映厅官网入口：<https://314ai.github.io>
 
 ---
 
@@ -17,7 +17,7 @@ Claude 作为 Anthropic 公司开发的先进 AI 助手，凭借其出色的推�
 - 客服响应及时，提供售后保障
 - 支持多种海外服务订阅（Claude、ChatGPT Plus、Midjourney 等）
 
-**官网入口：<https://www.naifeistation.com/i/EJYCBJ>
+**官网入口：<https://314ai.github.io>
 **优惠码：** `ceo`（享受 **93折** 优惠）
 
 ---
@@ -43,7 +43,7 @@ Claude 作为 Anthropic 公司开发的先进 AI 助手，凭借其出色的推�
 
 ### 步骤一：访问星际放映厅官网
 
-打开浏览器，访问星际放映厅官网：<https://www.naifeistation.com/i/EJYCBJ>
+打开浏览器，访问星际放映厅官网
 
 > 💡 **省钱提示**：在充值前记得使用优惠码 `ceo`，可享 **93折** 优惠！
 
@@ -176,7 +176,7 @@ Claude Pro 通常提供以下订阅选项：
 
 **关键步骤回顾：**
 
-1. 访问<https://www.naifeistation.com/i/EJYCBJ>
+1. 访问<https://314ai.github.io>
 2. 选择 Claude Pro 套餐
 3. 填写正确的 Claude 邮箱
 4. 使用优惠码 `ceo` 享受93折
