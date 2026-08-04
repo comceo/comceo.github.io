@@ -2,7 +2,7 @@
 
 ## 一、平台简介：星际放映厅是什么？
 
-星际放映厅（官网：<https://www.naifeistation.com/i/EJYCBJ>）是国内较为知名的ChatGPT Plus代充服务平台之一，主要为国内用户解决无法直接订阅ChatGPT Plus的难题。由于OpenAI的支付通道（Stripe）对中国大陆发行的银行卡、IP和账单地址有严格限制，国内用户几乎无法通过常规方式直接订阅ChatGPT Plus。星际放映厅这类平台应运而生，通过代充服务帮助用户完成官方订阅。
+星际放映厅（官网入口：<https://314ai.github.io>）是国内较为知名的ChatGPT Plus代充服务平台之一，主要为国内用户解决无法直接订阅ChatGPT Plus的难题。由于OpenAI的支付通道（Stripe）对中国大陆发行的银行卡、IP和账单地址有严格限制，国内用户几乎无法通过常规方式直接订阅ChatGPT Plus。星际放映厅这类平台应运而生，通过代充服务帮助用户完成官方订阅。
 
 平台拥有浙ICP备案号（浙ICP备2023017856号），具备合法运营资质。除ChatGPT代充外，平台也提供Gemini等AI模型的会员账号服务。
 
@@ -31,7 +31,7 @@
 
 **第一步：下单支付**
 
-访问星际放映厅官网<https://www.naifeistation.com/i/EJYCBJ>，选择“Plus代充”服务套餐，通过支付宝或微信完成支付。
+访问星际放映厅官网入口<https://314ai.github.io>，选择“Plus代充”服务套餐，通过支付宝或微信完成支付。
 
 **第二步：提供授权信息（无需密码）**
 
