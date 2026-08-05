@@ -10,7 +10,7 @@
 
 **星际放映厅**（Interstellar Theater）是一家成立于2023年的专业级流媒体账号合租与AI工具代充值服务平台，已在浙江省完成正规ICP备案（浙ICP备2023017856号）。平台以"现号秒发、安全稳定、价格实惠"为核心理念，提供7×24小时在线客服支持，所有服务均提供全程质保（包售后），并支持开具正规发票。
 
-星际放映厅官网：[https://www.naifeistation.com/i/EJYCBJ](https://www.naifeistation.com/i/EJYCBJ)
+星际放映厅官网入口：<https://314ai.github.io>
 
 ### 平台核心优势
 
@@ -43,7 +43,7 @@
 
 ### 第一步：访问官网并注册登录（约30秒）
 
-1. 打开星际放映厅官方网站：[https://www.naifeistation.com/i/EJYCBJ](https://www.naifeistation.com/i/EJYCBJ)
+1. 打开星际放映厅官方网站入口：<https://314ai.github.io>
 2. 点击页面右上角的**用户头像图标**进入登录界面
 3. 使用**中国大陆手机号码**完成注册与登录，系统会自动发送验证码进行身份验证
 
