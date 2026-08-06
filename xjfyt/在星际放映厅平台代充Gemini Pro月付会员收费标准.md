@@ -12,7 +12,7 @@
 
 ### 2.1 官方定价基准
 
-Google Gemini Advanced（原Gemini Pro）的官方订阅价格为 **$19.99/月** （约合人民币145元），包含在Google One AI Premium套餐中，同时提供2TB Google云存储空间。年付可享受约15%的折扣，折合$16.99/月。
+Google Gemini Advanced（原Gemini Pro）的官方订阅价格为 **$19.99/月** （约合人民币145元），包含在Google One AI Premium套餐中，同时提供2TB Google云存储空间。年付可享受约15%的折扣，折合$16.99/月。。
 
 ### 2.2 星际放映厅代充价格体系
 
