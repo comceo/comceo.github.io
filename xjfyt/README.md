@@ -2,7 +2,7 @@
 
 ## 平台简介
 
-**星际放映厅**是一家专业的流媒体合租与AI服务代充平台，致力于为用户提供高性价比的国际流媒体账号合租服务以及主流AI工具的账号购买和代充服务。平台以"让全球优质内容触手可及"为理念，帮助用户轻松访问Netflix、Disney+、HBO Max等国际流媒体平台，同时提供ChatGPT Plus、Grok、Gemini Pro等热门AI工具的账号服务。网站入口：<https://www.naifeistation.com/i/EJYCBJ>
+**星际放映厅**是一家专业的流媒体合租与AI服务代充平台，致力于为用户提供高性价比的国际流媒体账号合租服务以及主流AI工具的账号购买和代充服务。平台以"让全球优质内容触手可及"为理念，帮助用户轻松访问Netflix、Disney+、HBO Max等国际流媒体平台，同时提供ChatGPT Plus、Grok、Gemini Pro等热门AI工具的账号服务。网站入口：<https://314ai.github.io>
 
 ---
 
@@ -87,7 +87,7 @@
 
 ## 使用流程
 
-1. **访问官网**：进入<https://www.naifeistation.com/i/EJYCBJ>
+1. **访问官网**：进入<https://314ai.github.io>
 2. **选择服务**：浏览并选择需要的流媒体合租或AI工具服务
 3. **下单支付**：支持多种便捷支付方式
 4. **获取账号**：系统自动发货或客服协助开通
