@@ -137,7 +137,16 @@
         .fade-in.visible{opacity:1;transform:translateY(0)}
         .mobile-menu-btn{display:none;background:none;border:none;color:var(--light);font-size:1.5rem;cursor:pointer}
         @media(max-width:768px){.nav-links{display:none}.mobile-menu-btn{display:block}.hero{padding:7rem 1.5rem 3rem}.hero-cta-group{flex-direction:column;align-items:center}.btn-primary,.btn-secondary{width:100%;max-width:300px;justify-content:center}.stats-bar{gap:2rem}section{padding:4rem 1.5rem}.services-tabs{gap:0.5rem}.tab-btn{padding:0.6rem 1rem;font-size:0.85rem}table{font-size:0.85rem}th,td{padding:1rem}}
+        .wechat-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center}
+        .wechat-modal.active{display:flex}
+        .wechat-box{background:var(--dark);border:1px solid rgba(99,102,241,0.3);border-radius:20px;padding:2.5rem;text-align:center;max-width:360px;width:90%;position:relative;animation:fadeInUp 0.3s ease}
+        .wechat-box h3{font-size:1.3rem;margin-bottom:0.5rem;background:linear-gradient(135deg,#fff,#a5b4fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .wechat-box p{color:var(--gray);margin-bottom:1.5rem;font-size:0.95rem}
+        .wechat-id{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:1rem 2rem;border-radius:12px;font-size:1.4rem;font-weight:800;letter-spacing:2px;margin-bottom:1.5rem;display:inline-block}
+        .wechat-close{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--light);padding:0.6rem 1.5rem;border-radius:8px;cursor:pointer;font-size:0.9rem;transition:all 0.3s}
+        .wechat-close:hover{background:rgba(255,255,255,0.1)}
     </style>
+<base target="_blank">
 <base target="_blank">
 <base target="_blank">
 </head>
@@ -451,6 +460,9 @@
                 <div class="faq-answer">在官网选择服务并进入结算页面后，找到优惠码输入框，输入 <strong>ceo</strong> 即可享受93折优惠。优惠码适用于大部分服务，具体以官网结算页面显示为准。</div>
             </div>
         </div>
+        <div style="text-align:center;margin-top:3rem">
+            <button class="btn-primary" onclick="openWechat()" style="cursor:pointer;border:none;font-size:1rem">💬 本站客服</button>
+        </div>
     </section>
 
     <section>
@@ -461,7 +473,6 @@
                 <div class="hero-cta-group" style="justify-content:center">
                     <a href="https://www.naifeistation.com/i/EJYCBJ" class="btn-primary" target="_blank" rel="noopener noreferrer">🚀 立即进入官网</a>
                 </div>
-                <p style="margin-top:1.5rem;font-size:0.9rem;color:var(--gray)">推广链接：https://www.naifeistation.com/i/EJYCBJ</p>
             </div>
         </div>
     </section>
@@ -480,6 +491,15 @@
         </div>
     </footer>
 
+    <div class="wechat-modal" id="wechatModal" onclick="closeWechat(event)">
+        <div class="wechat-box" onclick="event.stopPropagation()">
+            <h3>📱 联系本站客服</h3>
+            <p>添加下方微信，获取一对一服务支持</p>
+            <div class="wechat-id">YCHR365</div>
+            <button class="wechat-close" onclick="closeWechat()">关闭</button>
+        </div>
+    </div>
+
     <script>
         function createStars(){const c=document.getElementById('stars');for(let i=0;i<100;i++){const s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.opacity=Math.random()*0.5+0.2;const sz=Math.random()*2+1;s.style.width=sz+'px';s.style.height=sz+'px';c.appendChild(s)}}createStars();
         window.addEventListener('scroll',()=>{const n=document.getElementById('navbar');if(window.scrollY>50)n.classList.add('scrolled');else n.classList.remove('scrolled')});
@@ -488,6 +508,8 @@
         document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
         function filterServices(cat){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active');document.querySelectorAll('.service-card').forEach(card=>{if(cat==='all'||card.dataset.category===cat)card.style.display='block';else card.style.display='none'})}
         document.querySelectorAll('.faq-question').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')});item.classList.toggle('active')})});
+        function openWechat(){document.getElementById('wechatModal').classList.add('active')}
+        function closeWechat(e){if(!e||e.target===document.getElementById('wechatModal'))document.getElementById('wechatModal').classList.remove('active')}
     </script>
 </body>
 </html>
