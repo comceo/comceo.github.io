@@ -2,7 +2,7 @@
 
 ## 一、环球巴士平台简介
 
-环球巴士（官网：<https://universalbus.cn/?s=xTI78O5wvA>）是一家成立于2019年的专业流媒体与AI工具合租平台，前身为"奈飞站"（NetflixStation），隶属于杭州十全信息科技有限公司。作为国内领先的一站式会员合租服务商，环球巴士目前已服务超过15万用户，提供包括Netflix、Disney+、Spotify、ChatGPT Plus、Midjourney等近20种热门服务的账号合租与代充值。
+环球巴士（官网入口：<https://314ai.github.io>）是一家成立于2019年的专业流媒体与AI工具合租平台，前身为"奈飞站"（NetflixStation），隶属于杭州十全信息科技有限公司。作为国内领先的一站式会员合租服务商，环球巴士目前已服务超过15万用户，提供包括Netflix、Disney+、Spotify、ChatGPT Plus、Midjourney等近20种热门服务的账号合租与代充值。
 
 ### 核心优势
 
@@ -18,7 +18,7 @@
 
 ### 2.1 官网入口
 
-环球巴士官方网站地址为：**<https://universalbus.cn/?s=xTI78O5wvA>**
+环球巴士官网入口：**<https://314ai.github.io>**
 
 > ⚠️ 注意：请务必通过官方链接访问，避免进入假冒网站造成损失。
 
@@ -95,7 +95,7 @@
 
 ### 步骤一：注册/登录账号
 
-1. 访问环球巴士官网：<https://universalbus.cn/?s=xTI78O5wvA>
+1. 访问环球巴士官网入口：<https://314ai.github.io>
 2. 点击右上角"登录"按钮
 3. 选择注册方式：支持手机号、邮箱、Google或LINE账号快速注册
 4. 完成注册后自动登录
