@@ -148,6 +148,7 @@
     </style>
 <base target="_blank">
 <base target="_blank">
+<base target="_blank">
 </head>
 <body>
     <div class="stars-bg"></div>
@@ -189,7 +190,7 @@
     <section id="features">
         <div class="section-header fade-in">
             <div class="section-tag">为什么选择环球巴士</div>
-            <h2>六大核心优势</h2>
+            <h2>五大核心优势</h2>
             <p class="section-desc">从正规公司运营到售后保障，每个环节都为您精心打造</p>
         </div>
         <div class="features-grid">
@@ -207,11 +208,6 @@
                 <div class="feature-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24">💬</div>
                 <h3>7×24小时客服</h3>
                 <p>在线客服全年无休，配备专业技术团队，提供全链路服务支持，遇到问题随时响应。</p>
-            </div>
-            <div class="feature-card fade-in">
-                <div class="feature-icon" style="background:rgba(236,72,153,0.15);color:#f472b6">🛡️</div>
-                <h3>翻车必赔保障</h3>
-                <p>账号异常、失效等问题承诺"翻车必赔"，7×24小时在线客服实时响应，售后无忧，使用更安心。</p>
             </div>
             <div class="feature-card fade-in">
                 <div class="feature-icon" style="background:rgba(6,182,212,0.15);color:#67e8f9">💰</div>
@@ -441,7 +437,7 @@
             </div>
         </div>
         <div style="text-align:center;margin-top:3rem">
-            <a href="https://universalbus.cn/?s=xTI78O5wvA" class="btn-primary" style="cursor:pointer;border:none;font-size:1rem;text-decoration:none">💬 联系官网客服</a>
+            <button class="btn-primary" style="cursor:pointer;border:none;font-size:1rem" onclick="showQQModal()">💬 联系本站客服</button>
         </div>
     </section>
 
@@ -449,7 +445,7 @@
         <div class="cta-section fade-in">
             <div class="cta-content">
                 <h2>准备好上车了吗？</h2>
-                <p>加入15万+用户的选择，用更低的价格享受全球优质数字服务。支持支付宝，自动交付，翻车必赔。</p>
+                <p>加入15万+用户的选择，用更低的价格享受全球优质数字服务。支持支付宝，自动交付。</p>
                 <div class="hero-cta-group" style="justify-content:center">
                     <a href="https://universalbus.cn/?s=xTI78O5wvA" class="btn-primary">🚀 立即进入官网</a>
                 </div>
@@ -471,6 +467,15 @@
         </div>
     </footer>
 
+    <div class="wechat-modal" id="qqModal" onclick="if(event.target===this)closeQQModal()">
+        <div class="wechat-box">
+            <h3>联系本站客服</h3>
+            <p>添加客服QQ进行咨询，备注"环球巴士"即可</p>
+            <div class="wechat-id">3930323142</div>
+            <button class="wechat-close" onclick="closeQQModal()">关闭</button>
+        </div>
+    </div>
+
     <script>
         function createStars(){const c=document.getElementById('stars');for(let i=0;i<100;i++){const s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.opacity=Math.random()*0.5+0.2;const sz=Math.random()*2+1;s.style.width=sz+'px';s.style.height=sz+'px';c.appendChild(s)}}createStars();
         window.addEventListener('scroll',()=>{const n=document.getElementById('navbar');if(window.scrollY>50)n.classList.add('scrolled');else n.classList.remove('scrolled')});
@@ -479,6 +484,8 @@
         document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
         function filterServices(cat){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active');document.querySelectorAll('.service-card').forEach(card=>{if(cat==='all'||card.dataset.category===cat)card.style.display='block';else card.style.display='none'})}
         document.querySelectorAll('.faq-question').forEach(q=>{q.addEventListener('click',()=>{const item=q.parentElement;document.querySelectorAll('.faq-item').forEach(i=>{if(i!==item)i.classList.remove('active')});item.classList.toggle('active')})});
+        function showQQModal(){document.getElementById('qqModal').classList.add('active')}
+        function closeQQModal(){document.getElementById('qqModal').classList.remove('active')}
         function toggleMenu(){const nav=document.querySelector('.nav-links');nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='100%';nav.style.left='0';nav.style.right='0';nav.style.background='rgba(15,23,42,0.95)';nav.style.flexDirection='column';nav.style.padding='1rem';nav.style.gap='1rem';nav.style.backdropFilter='blur(20px)'}
     </script>
 </body>
