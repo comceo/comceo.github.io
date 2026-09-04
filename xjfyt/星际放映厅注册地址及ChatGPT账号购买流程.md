@@ -8,7 +8,7 @@
 
 ### 官方入口
 
-- **官方注册地址**：<https://www.naifeistation.com/i/EJYCBJ>
+- **官网入口**：<https://314ai.github.io>
 - **邀请码/优惠码**：`ceo`（使用可享受93折优惠）
 
 ### 注册步骤
