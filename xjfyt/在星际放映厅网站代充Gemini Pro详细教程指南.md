@@ -2,7 +2,7 @@
 
 ## 一、什么是星际放映厅？
 
-星际放映厅是一家专注于流媒体与AI工具的综合性平台，该平台已完成正规ICP备案（浙ICP备2023017856号），并由专业团队负责运营，可为用户提供安全可靠的流媒体和AI工具相关服务。官方注册地址：<https://www.naifeistation.com/i/EJYCBJ>
+星际放映厅是一家专注于流媒体与AI工具的综合性平台，该平台已完成正规ICP备案（浙ICP备2023017856号），并由专业团队负责运营，可为用户提供安全可靠的流媒体和AI工具相关服务。官网入口：<https://314ai.github.io>
 
 该平台不仅提供Netflix、HBO Max、Disney+、Prime Video、YouTube Premium等流媒体合租服务，同时还提供ChatGPT Plus拼车合租/账号购买/代充值、SuperGrok拼车合租/账号购买/代充值、**Gemini Pro代充值/账号购买**、Claude代充值/账号购买、Midjourney代充值/账号购买，以及Poe账号购买等多种服务。
 
@@ -40,7 +40,7 @@
 
 ### 第一步：访问星际放映厅官网
 
-打开星际放映厅官网：<https://www.naifeistation.com/i/EJYCBJ>
+打开星际放映厅官网入口：<https://314ai.github.io>
 
 ### 第二步：注册并登录账号
 
