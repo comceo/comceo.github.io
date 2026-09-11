@@ -8,6 +8,9 @@ const OUT = path.join(ROOT, '_site');
 if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 
+const SITE = 'https://314blog.com';
+const sitemapUrls = [];
+
 function walk(dir) {
   for (const item of fs.readdirSync(dir)) {
     if (['_site', 'node_modules', '.git', '.github'].includes(item)) continue;
@@ -56,6 +59,10 @@ ${body}
       fs.mkdirSync(path.dirname(outPath), { recursive: true });
       fs.writeFileSync(outPath, html);
       console.log('md -> html:', rel);
+
+      // 记录到 sitemap（用 .html 地址）
+      const urlPath = rel.replace(/\.md$/, '.html').replace(/\\/g, '/');
+      sitemapUrls.push(`${SITE}/${encodeURI(urlPath)}`);
     } else {
       const outPath = path.join(OUT, rel);
       fs.mkdirSync(path.dirname(outPath), { recursive: true });
@@ -65,4 +72,14 @@ ${body}
   }
 }
 walk(ROOT);
+
+// 生成 sitemap.xml（首页 + 所有文章）
+sitemapUrls.unshift(SITE + '/');
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map(u => `  <url>\n    <loc>${u}</loc>\n  </url>`).join('\n')}
+</urlset>`;
+fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sitemap);
+console.log(`Sitemap generated with ${sitemapUrls.length} URLs`);
+
 console.log('Build done!');
