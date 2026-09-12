@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>三分钟带你了解国内性价比比较高的Token聚合平台</title>
+<meta name="description" content="三分钟带你了解国内性价比比较高的Token聚合平台">
+<!-- 【迁移模式】将来要把权重统一到 314blog.com 时，取消下面这行的注释（会把 canonical 加到所有文章页）：
+<link rel="canonical" href="https://314blog.com/token/%E4%B8%89%E5%88%86%E9%92%9F%E5%B8%A6%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%9B%BD%E5%86%85%E6%80%A7%E4%BB%B7%E6%AF%94%E6%AF%94%E8%BE%83%E9%AB%98%E7%9A%84Token%E8%81%9A%E5%90%88%E5%B9%B3%E5%8F%B0">
+-->
+<style>
+body{max-width:820px;margin:0 auto;padding:32px 20px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#333;background:#fff}
+h1{font-size:28px;border-bottom:2px solid #eee;padding-bottom:12px}
+h2{font-size:22px;margin-top:32px}h3{font-size:18px;margin-top:24px}
+img{max-width:100%;height:auto}
+pre{background:#f6f8fa;padding:14px;border-radius:6px;overflow:auto}
+code{background:#f6f8fa;padding:2px 5px;border-radius:4px;font-size:.9em}
+a{color:#0366d6}
+blockquote{border-left:4px solid #dfe2e5;margin:0;padding-left:16px;color:#6a737d}
+.nav{display:flex;gap:16px;margin-bottom:20px}
+.nav a{color:#0366d6;text-decoration:none;font-size:14px}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="/">← 返回首页</a>
+  <a href="/articles">📚 全部文章</a>
+</div>
+<h1>三分钟带你了解国内性价比比较高的Token聚合平台</h1>
+<h2>一、什么是Token聚合平台？</h2>
+<p>对于开发者来说，大模型的接入成本一直是绕不开的话题。不同厂商的模型各有优劣，但每接入一家就要注册一个账号、管理一套Key、对接一套接口，麻烦不说，成本也很难控制。</p>
+<p>这时候，<strong>Token聚合平台</strong>的价值就体现出来了：一个平台、一个账号、一个Key，就能调用多家厂商的模型，按Token统一计费。而国内众多聚合平台中，<strong><a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">阿里云百炼token聚合</a>（Model Studio / DashScope）</strong> 是综合实力和性价比都比较突出的一个。</p>
+<h2>二、阿里云百炼是什么？</h2>
+<p>百炼是阿里云推出的一站式大模型服务平台，可以理解为一个&quot;模型超市&quot;：</p>
+<ul>
+<li><strong>自研模型齐全</strong>：通义千问（Qwen）全系列——从旗舰的 Qwen-Max、主力 Plus 系列，到高性价比的 Flash/Turbo 系列，再到多模态、语音、视觉模型，全部覆盖；</li>
+<li><strong>第三方模型兼容</strong>：除了千问系列，还接入了 DeepSeek、智谱 GLM、Kimi 等主流模型；</li>
+<li><strong>OpenAI兼容接口</strong>：API 风格与 OpenAI 一致，替换 base_url 和 api_key 即可无缝接入现有项目，主流 SDK 都能直接复用。</li>
+</ul>
+<p>也就是说，你不用在&quot;用哪家模型&quot;上纠结——在百炼上就能横向对比、随时切换。</p>
+<h2>三、为什么说它性价比高？</h2>
+<p><strong>1. 免费额度大方</strong></p>
+<p>新用户开通后，每个模型都送 100万 Token 的免费额度（有效期90天），几十个模型合计约7000万免费Token。对于个人开发者和原型测试来说，基本可以&quot;零成本&quot;跑通项目。</p>
+<p><strong>2. Batch 调用半价</strong></p>
+<p>支持 Batch 的模型，异步批量调用直接按实时价的 <strong>50%</strong> 计费，离线任务、数据处理等场景能省下一半的钱。</p>
+<p><strong>3. 闲时折扣</strong></p>
+<p>部分模型在夜间闲时（如 Qwen3.7 系列）有低至两折的折扣，定时任务放到夜间跑，成本可以再砍一大截。</p>
+<p><strong>4. 上下文缓存折扣</strong></p>
+<p>重复的长 Prompt、知识库文档走缓存命中，输入费用可降低60%–90%，这对 RAG 类应用是实实在在的省钱利器。</p>
+<p><strong>5. 按量计费，无最低消费</strong></p>
+<p>费用 = 输入Token×输入单价 + 输出Token×输出单价，用多少付多少。大多数轻量级应用一个月的模型开销只有几十到几百元。</p>
+<h2>四、上手有多简单？</h2>
+<ol>
+<li>打开注册/体验入口：<a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">阿里云百炼token聚合平台</a></li>
+<li>开通百炼服务，领取各模型的免费额度；</li>
+<li>在控制台创建 API Key；</li>
+<li>复制 OpenAI 兼容的调用代码（替换 base_url 和 key），三行代码就能跑通第一个请求。</li>
+</ol>
+<h2>五、适合谁？</h2>
+<ul>
+<li><strong>个人开发者 / 创业者</strong>：免费额度+按量付费，前期几乎零成本试错；</li>
+<li><strong>中小企业</strong>：多模型统一管理，不需要维护多套账号和Key；</li>
+<li><strong>阿里云生态用户</strong>：与云产品（OSS、函数计算等）打通顺畅，数据合规也有保障。</li>
+</ul>
+<h2>写在最后</h2>
+<p>2026年的大模型 API 价格战已经把门槛拉到了历史低位，而百炼的玩法是&quot;免费额度管够 + 半价/闲时/缓存多重折扣 + 多模型一站搞定&quot;。如果你正在选型或想低成本试水 AI 应用，不妨从这个入口进去体验一圈：</p>
+<p>👉 <a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">阿里云百炼</a></p>
+<p>三分钟读完，三行代码跑通——剩下的交给模型就行。</p>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>在阿里云百炼平台购买智谱token套餐的流程与收费标准</title>
+<meta name="description" content="在阿里云百炼平台购买智谱token套餐的流程与收费标准">
+<!-- 【迁移模式】将来要把权重统一到 314blog.com 时，取消下面这行的注释（会把 canonical 加到所有文章页）：
+<link rel="canonical" href="https://314blog.com/token/%E5%9C%A8%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BE%E7%82%BC%E5%B9%B3%E5%8F%B0%E8%B4%AD%E4%B9%B0%E6%99%BA%E8%B0%B1token%E5%A5%97%E9%A4%90%E7%9A%84%E6%B5%81%E7%A8%8B%E4%B8%8E%E6%94%B6%E8%B4%B9%E6%A0%87%E5%87%86">
+-->
+<style>
+body{max-width:820px;margin:0 auto;padding:32px 20px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#333;background:#fff}
+h1{font-size:28px;border-bottom:2px solid #eee;padding-bottom:12px}
+h2{font-size:22px;margin-top:32px}h3{font-size:18px;margin-top:24px}
+img{max-width:100%;height:auto}
+pre{background:#f6f8fa;padding:14px;border-radius:6px;overflow:auto}
+code{background:#f6f8fa;padding:2px 5px;border-radius:4px;font-size:.9em}
+a{color:#0366d6}
+blockquote{border-left:4px solid #dfe2e5;margin:0;padding-left:16px;color:#6a737d}
+.nav{display:flex;gap:16px;margin-bottom:20px}
+.nav a{color:#0366d6;text-decoration:none;font-size:14px}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="/">← 返回首页</a>
+  <a href="/articles">📚 全部文章</a>
+</div>
+<h1>在阿里云百炼平台购买智谱token套餐的流程与收费标准</h1>
+<h2>一、先搞清楚：你要买的到底是什么</h2>
+<p>严格来说，&quot;智普&quot;通常指智谱 AI 的 GLM 系列模型（GLM-4、GLM-5 等）。在<a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">阿里云百炼</a>（Model Studio）平台上，GLM 作为<strong>第三方模型</strong>上架，与通义千问、DeepSeek、Kimi、MiniMax 等模型放在同一个平台里调用。也就是说，购买&quot;智谱 token 套餐&quot;的本质是：<strong>在百炼平台上为 GLM 模型购买调用额度，或选择一种能覆盖 GLM 的计费套餐</strong>。</p>
+<p>需要先明确一点：百炼平台默认采用<strong>按量后付费</strong>，不会直接&quot;赠送&quot;token。如果你想提前锁定额度或降低成本，官方提供了三种可选形态：资源包（一次性购买固定 Token 量）、节省计划（承诺月消费换折扣）、Token Plan（一次性购买 credits 额度）。</p>
+<h2>二、收费标准详解</h2>
+<h3>1. GLM 模型本身的计费规则</h3>
+<ul>
+<li><strong>按输入、输出 Token 分别计价</strong>：GLM 属于第三方文本生成模型，按实际调用的输入 Token 和输出 Token 扣费，支持 Batch 调用的模型，其输入输出单价按实时推理价格的 50% 计费（批量跑数据成本直接减半）。</li>
+<li><strong>免费额度</strong>：每个模型提供 100 万 Token 免费额度，有效期为开通百炼之日起 90 天，用于测试基本够用。</li>
+<li><strong>地域限制</strong>：第三方模型（DeepSeek、Kimi、GLM、MiniMax）仅支持华北2（北京）地域，使用 GLM 时 API Key 和 Base URL 必须对应北京地域。</li>
+<li><strong>具体单价</strong>：GLM 各版本（如 glm-4、glm-5 系列）的输入/输出单价会随版本更新调整，请以百炼控制台&quot;模型广场&quot;中该模型的定价页实时显示为准——这是下单前最后确认价格的唯一可靠口径。</li>
+</ul>
+<h3>2. 三种套餐形态怎么选</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>资源包</th>
+<th>节省计划</th>
+<th>Token Plan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计费模式</td>
+<td>一次性购买固定 Token 量</td>
+<td>承诺月消费换阶梯折扣</td>
+<td>一次性购买 credits 额度</td>
+</tr>
+<tr>
+<td>模型覆盖</td>
+<td>仅适用单个特定模型</td>
+<td>覆盖绝大部分阿里直供模型</td>
+<td>仅支持部分模型</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>用量小或集中调用 GLM</td>
+<td>长期稳定、用量可预期</td>
+<td>团队协作共享额度</td>
+</tr>
+</tbody></table>
+<p>官方选型建议：长期稳定使用选节省计划；用量较小或集中在 GLM 单一模型选资源包；需要团队共享额度选 Token Plan。</p>
+<p>几个关键细节：</p>
+<ul>
+<li><strong>资源包</strong>：购买后立即生效抵扣，优先消耗免费额度，免费额度用完才开始抵扣资源包。国内站的大语言模型推理节省计划档位从 20 元到 50 万元共 11 档，有效期从 1 个月到 1 年不等。</li>
+<li><strong>节省计划</strong>：如果你高频调用 GLM，重点关注 <strong>AI 通用型节省计划</strong>——GLM 的阿里直供版本属于其 C 类抵扣范围，承诺每月消费可换取阶梯折扣（长期高频使用最低可至约 5.3 折）；但需注意三方直供版本不支持抵扣，模型是否有阿里直供版以控制台实际展示为准。</li>
+<li><strong>Token Plan</strong>：订阅制，用&quot;Credits&quot;作为统一计量单位，开通后可在通义千问、GLM 等多个模型间自由切换，无需为每个模型单独购买额度包，支持席位分配、用量统计、多租户隔离，且团队版数据不用于模型训练。目前公开的三档参考价为：标准版坐席 ¥198/月（25,000 Credits）、高级版坐席 ¥698/月（100,000 Credits）、尊享版坐席 ¥1,398/月（250,000 Credits），具体价格以下单页为准。</li>
+</ul>
+<h2>三、购买流程（手把手）</h2>
+<p><strong>第 1 步：注册并实名认证。</strong> 使用阿里云主账号注册并完成实名认证（必须，RAM 子账号无法下单）。建议通过优惠入口进入：<a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh</a>，先领取可用优惠再下单，长期使用能省约一成费用。</p>
+<p><strong>第 2 步：免费开通百炼。</strong> 从上面的入口进入百炼产品页，点击&quot;去购买/开通&quot;。开通本身 0 元，版本使用费 0 元，时长最长可选 1 年；开通后进入控制台首页领取免费流量包，即可获得各模型累计最高数千万 Token 的免费推理额度。</p>
+<p><strong>第 3 步：选择套餐并下单。</strong></p>
+<ul>
+<li>只调 GLM、用量小 → 在控制台购买对应模型<strong>资源包</strong>；</li>
+<li>用量稳定且大 → 购买 <strong>AI 通用型节省计划</strong>（注意选支持 GLM 直供版的档位）；</li>
+<li>团队协作、多模型混用 → 订阅 <strong>Token Plan</strong>，从上面的优惠链接进入下单页，选择对应坐席版本，应用优惠券后支付（支持支付宝、微信等）。</li>
+</ul>
+<p><strong>第 4 步：获取 API Key。</strong> 支付完成后进入百炼控制台 → 密钥管理 → 创建新的 API Key。</p>
+<p><strong>第 5 步：配置到开发工具。</strong> 以 OpenAI 兼容接口为例，北京地域 Base URL 为 <code>https://dashscope.aliyuncs.com/compatible-mode/v1</code>，填入 API Key 后将 model 设为 <code>glm-4</code> 或 <code>glm-5</code> 等具体型号即可调用。Cursor、Claude Code、Cline、Cherry Studio 等主流工具均支持此接入方式。</p>
+<h2>四、避坑提示</h2>
+<ol>
+<li><strong>先领优惠再下单</strong>：通过 <a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh</a> 进入可先领取优惠券，下单时直接抵扣，不要白付原价。</li>
+<li><strong>GLM 只认北京地域</strong>：第三方模型的 API Key 与 Base URL 必须同属北京地域，混用其他地域的地址会调用失败。</li>
+<li><strong>买完套餐 ≠ 直接能用</strong>：Token Plan/Coding Plan 类产品需要通过 API 方式给外部工具供能，Key 和 Base URL 要手动配置到工具里，平台不会自动打通。</li>
+<li><strong>盯紧账单</strong>：资源包额度消耗完没有通知，建议定期在控制台&quot;账单详情&quot;中按产品名筛选，查看各模型的抵扣明细。</li>
+<li><strong>价格以官网为准</strong>：GLM 单价和套餐档位会随官方活动调整，本文价格仅供参考，最终以下单页实时显示为准。</li>
+</ol>
+<h2>五、总结</h2>
+<p>如果是个人开发者或先试用：直接<strong>免费开通 + 领取免费额度</strong>，零成本跑通 GLM；如果调用集中在 GLM 且量不大：买个<strong>资源包</strong>；如果是企业长期高频使用：上 <strong>AI 通用型节省计划</strong>或 <strong>Token Plan</strong>，成本最低可到 4.5—5.3 折。无论选哪条路径，记得先走 <a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh">https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh</a> 领券再下单，省下的都是真金白银。</p>
+
+</body>
+</html>

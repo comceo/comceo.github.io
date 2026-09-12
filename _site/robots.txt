@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://314blog.com/sitemap.xml

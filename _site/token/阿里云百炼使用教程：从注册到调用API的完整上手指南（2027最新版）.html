@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>阿里云百炼使用教程：从注册到调用API的完整上手指南（2027最新版）</title>
+<meta name="description" content="阿里云百炼使用教程：从注册到调用API的完整上手指南（2027最新版）">
+<!-- 【迁移模式】将来要把权重统一到 314blog.com 时，取消下面这行的注释（会把 canonical 加到所有文章页）：
+<link rel="canonical" href="https://314blog.com/token/%E9%98%BF%E9%87%8C%E4%BA%91%E7%99%BE%E7%82%BC%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%9A%E4%BB%8E%E6%B3%A8%E5%86%8C%E5%88%B0%E8%B0%83%E7%94%A8API%E7%9A%84%E5%AE%8C%E6%95%B4%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97%EF%BC%882027%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%89">
+-->
+<style>
+body{max-width:820px;margin:0 auto;padding:32px 20px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#333;background:#fff}
+h1{font-size:28px;border-bottom:2px solid #eee;padding-bottom:12px}
+h2{font-size:22px;margin-top:32px}h3{font-size:18px;margin-top:24px}
+img{max-width:100%;height:auto}
+pre{background:#f6f8fa;padding:14px;border-radius:6px;overflow:auto}
+code{background:#f6f8fa;padding:2px 5px;border-radius:4px;font-size:.9em}
+a{color:#0366d6}
+blockquote{border-left:4px solid #dfe2e5;margin:0;padding-left:16px;color:#6a737d}
+.nav{display:flex;gap:16px;margin-bottom:20px}
+.nav a{color:#0366d6;text-decoration:none;font-size:14px}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="/">← 返回首页</a>
+  <a href="/articles">📚 全部文章</a>
+</div>
+<h1>阿里云百炼使用教程：从注册到调用API的完整上手指南（2027最新版）</h1>
+<blockquote>
+<p>如果你正在寻找一个稳定、功能强大且性价比高的国内大模型平台，<strong>阿里云百炼</strong>是目前最值得尝试的选择之一。本文将带你从零开始，完成注册、开通、模型调用全流程，并附上代码实战示例。</p>
+</blockquote>
+<hr>
+<h2>一、阿里云百炼是什么？</h2>
+<p><strong>阿里云百炼</strong>（Alibaba Cloud Bailian）是阿里云推出的企业级大模型应用开发平台，集成了通义千问、Llama、百川、ChatGLM 等主流开源与闭源大模型，提供：</p>
+<ul>
+<li><strong>一键模型调用</strong>：无需自建 GPU 服务器，直接通过 API 调用大模型能力</li>
+<li><strong>可视化应用搭建</strong>：零代码搭建知识库问答、智能客服、内容生成等应用</li>
+<li><strong>模型微调与训练</strong>：支持基于自有数据对模型进行微调</li>
+<li><strong>稳定的企业级服务</strong>：依托阿里云基础设施，SLA 保障，适合生产环境</li>
+</ul>
+<blockquote>
+<p>还没开通阿里云百炼？可以通过以下链接注册阿里云账号并开通百炼服务，新用户通常有免费试用额度：
+👉 <a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh"><strong>点击前往阿里云百炼官方入口</strong></a></p>
+</blockquote>
+<hr>
+<h2>二、注册与开通流程</h2>
+<h3>步骤1：注册/登录阿里云账号</h3>
+<ol>
+<li>访问阿里云官网，点击右上角「免费注册」</li>
+<li>支持手机号、邮箱、支付宝、淘宝账号等多种方式注册</li>
+<li>完成实名认证（个人或企业均可，企业认证额度更高）</li>
+</ol>
+<h3>步骤2：进入百炼控制台</h3>
+<ol>
+<li>登录阿里云后，在顶部搜索栏输入「百炼」或「大模型服务平台百炼」</li>
+<li>点击进入「大模型服务平台百炼」控制台</li>
+<li>首次进入需要同意服务协议并开通服务</li>
+</ol>
+<h3>步骤3：领取免费额度</h3>
+<p>开通后，新用户通常可以领取：</p>
+<ul>
+<li><strong>通义千问系列模型</strong> 的免费调用额度（如 100 万次 Token）</li>
+<li><strong>部分开源模型</strong> 的限时免费调用权限</li>
+</ul>
+<blockquote>
+<p>💡 <strong>提示</strong>：建议先通过上方链接注册，确保享受到最新的新客优惠活动。</p>
+</blockquote>
+<hr>
+<h2>三、创建 API Key</h2>
+<p>调用百炼 API 前，必须先创建 API Key（即 AccessKey 或业务空间 API Key）。</p>
+<h3>方式一：创建业务空间 API Key（推荐）</h3>
+<ol>
+<li>在百炼控制台左侧菜单，点击「API Key 管理」</li>
+<li>点击「创建 API Key」</li>
+<li>为 Key 命名（如 <code>my-first-key</code>），选择有效期</li>
+<li><strong>立即复制并妥善保存</strong>——这是唯一一次能看到完整 Key 的机会</li>
+</ol>
+<h3>方式二：使用阿里云 AccessKey</h3>
+<p>如果你需要更细粒度的权限控制，也可以使用阿里云 RAM 用户的 AccessKey ID 和 AccessKey Secret，但配置相对复杂，初学者建议先用方式一。</p>
+<hr>
+<h2>四、在线快速体验（不用写代码）</h2>
+<p>在正式写代码前，建议先在控制台里体验模型效果：</p>
+<ol>
+<li>进入百炼控制台 → 「模型广场」</li>
+<li>选择你想体验的模型，比如：</li>
+</ol>
+<ul>
+<li><code>qwen-turbo</code> —— 通义千问轻量版，速度快、成本低</li>
+<li><code>qwen-plus</code> —— 通义千问增强版，综合能力更强</li>
+<li><code>qwen-max</code> —— 通义千问旗舰版，复杂任务首选</li>
+</ul>
+<ol start="3">
+<li>在右侧对话框输入问题，直接测试模型回复效果</li>
+</ol>
+<p>这样你可以先确认模型能力是否满足需求，再决定是否接入 API。</p>
+<hr>
+<h2>五、API 调用实战（Python 示例）</h2>
+<p>下面是用 Python 调用阿里云百炼 API 的完整代码，以 <strong>通义千问</strong> 为例。</p>
+<h3>5.1 安装依赖</h3>
+<pre><code class="language-bash">pip install dashscope
+</code></pre>
+<p><code>dashscope</code> 是阿里云官方提供的 Python SDK，封装了百炼平台的模型调用接口。</p>
+<h3>5.2 单轮对话示例</h3>
+<pre><code class="language-python">import dashscope
+from dashscope import Generation
+
+# 设置你的 API Key
+dashscope.api_key = &quot;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;  # 替换为你的 API Key
+
+# 调用通义千问模型
+response = Generation.call(
+    model=&quot;qwen-turbo&quot;,  # 模型名称：qwen-turbo / qwen-plus / qwen-max
+    messages=[
+        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个乐于助人的智能助手。&quot;},
+        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请介绍一下阿里云百炼平台的主要功能。&quot;}
+    ],
+    result_format=&quot;message&quot;,  # 返回格式
+    max_tokens=1500,          # 最大生成 Token 数
+    temperature=0.7           # 随机性（0~1，越大越有创意）
+)
+
+# 处理响应
+if response.status_code == 200:
+    print(&quot;模型回复：&quot;)
+    print(response.output.choices[0][&quot;message&quot;][&quot;content&quot;])
+else:
+    print(f&quot;调用失败：{response.code} - {response.message}&quot;)
+</code></pre>
+<h3>5.3 多轮对话示例（带上下文记忆）</h3>
+<pre><code class="language-python">import dashscope
+from dashscope import Generation
+
+dashscope.api_key = &quot;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;
+
+# 维护对话历史
+messages = [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个专业的编程助手。&quot;}
+]
+
+# 第一轮对话
+messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Python 中列表和元组有什么区别？&quot;})
+
+response = Generation.call(
+    model=&quot;qwen-plus&quot;,
+    messages=messages,
+    result_format=&quot;message&quot;
+)
+
+reply = response.output.choices[0][&quot;message&quot;][&quot;content&quot;]
+print(&quot;AI:&quot;, reply)
+
+# 把模型的回复加入历史
+messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: reply})
+
+# 第二轮对话（带上下文）
+messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;那字典呢？和它们相比有什么特点？&quot;})
+
+response = Generation.call(
+    model=&quot;qwen-plus&quot;,
+    messages=messages,
+    result_format=&quot;message&quot;
+)
+
+print(&quot;AI:&quot;, response.output.choices[0][&quot;message&quot;][&quot;content&quot;])
+</code></pre>
+<h3>5.4 流式输出示例（打字机效果）</h3>
+<p>如果希望在网页或终端实现「逐字输出」的效果，可以使用流式调用：</p>
+<pre><code class="language-python">import dashscope
+from dashscope import Generation
+
+dashscope.api_key = &quot;sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;
+
+messages = [
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;写一首关于人工智能的短诗。&quot;}
+]
+
+# 启用流式输出
+responses = Generation.call(
+    model=&quot;qwen-turbo&quot;,
+    messages=messages,
+    result_format=&quot;message&quot;,
+    stream=True,  # 关键参数：启用流式
+    incremental_output=True
+)
+
+print(&quot;AI: &quot;, end=&quot;&quot;, flush=True)
+for response in responses:
+    if response.status_code == 200:
+        content = response.output.choices[0][&quot;message&quot;][&quot;content&quot;]
+        print(content, end=&quot;&quot;, flush=True)
+    else:
+        print(f&quot;\n流式输出异常：{response.code}&quot;)
+print()
+</code></pre>
+<hr>
+<h2>六、cURL 调用方式（不用安装 SDK）</h2>
+<p>如果你不想用 Python，也可以直接用 HTTP 请求调用：</p>
+<pre><code class="language-bash">curl https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation \
+  -H &quot;Authorization: Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{
+    &quot;model&quot;: &quot;qwen-turbo&quot;,
+    &quot;input&quot;:{
+        &quot;messages&quot;:[
+            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个 helpful 的助手。&quot;},
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;你好，请自我介绍一下。&quot;}
+        ]
+    },
+    &quot;parameters&quot;: {
+        &quot;result_format&quot;: &quot;message&quot;,
+        &quot;max_tokens&quot;: 800
+    }
+  }&#39;
+</code></pre>
+<hr>
+<h2>七、模型选型建议</h2>
+<table>
+<thead>
+<tr>
+<th>模型名称</th>
+<th>适用场景</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>qwen-turbo</code></td>
+<td>日常问答、内容生成、简单分类</td>
+<td>速度快、成本低</td>
+</tr>
+<tr>
+<td><code>qwen-plus</code></td>
+<td>复杂推理、代码生成、多轮对话</td>
+<td>综合能力均衡</td>
+</tr>
+<tr>
+<td><code>qwen-max</code></td>
+<td>高难度任务、专业领域分析</td>
+<td>能力最强、成本较高</td>
+</tr>
+<tr>
+<td><code>llama3-8b</code></td>
+<td>英文场景、开源需求</td>
+<td>Meta 开源模型</td>
+</tr>
+<tr>
+<td><code>baichuan2-7b</code></td>
+<td>中文场景、私有化部署参考</td>
+<td>百川智能开源模型</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>选型原则：<strong>先用 qwen-turbo 测试，不够再用 qwen-plus，最后才上 qwen-max。</strong> 这样能在保证效果的同时控制成本。</p>
+</blockquote>
+<hr>
+<h2>八、费用与额度说明</h2>
+<p>阿里云百炼采用 <strong>按量付费</strong> 模式，根据实际调用的 Token 数量计费：</p>
+<ul>
+<li><strong>输入 Token</strong>：你发送给模型的文本对应的 Token 数</li>
+<li><strong>输出 Token</strong>：模型回复你的文本对应的 Token 数</li>
+</ul>
+<p>计费公式：<strong>总费用 = 输入 Token 数 × 输入单价 + 输出 Token 数 × 输出单价</strong></p>
+<p>不同模型的单价不同，<code>qwen-turbo</code> 最便宜，<code>qwen-max</code> 最贵。具体价格以控制台「计费管理」页面为准。</p>
+<blockquote>
+<p>新用户记得领取免费额度，前期学习和测试基本不用花钱。还没注册的话，可以走这个入口：
+👉 <a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh"><strong>阿里云百炼新用户注册与开通</strong></a></p>
+</blockquote>
+<hr>
+<h2>九、常见问题 FAQ</h2>
+<p><strong>Q1：API Key 泄露了怎么办？</strong></p>
+<blockquote>
+<p>立即到「API Key 管理」页面删除旧 Key，重新创建新的 Key，并更新到代码中。</p>
+</blockquote>
+<p><strong>Q2：调用时提示 &quot;QuotaExceeded&quot;？</strong></p>
+<blockquote>
+<p>说明你的免费额度已用完或付费额度不足。前往控制台「额度管理」充值或购买资源包。</p>
+</blockquote>
+<p><strong>Q3：如何查看我的 API 调用量和费用？</strong></p>
+<blockquote>
+<p>在百炼控制台 → 「用量统计」可以查看按天/按月的调用量、Token 消耗和费用明细。</p>
+</blockquote>
+<p><strong>Q4：支持哪些编程语言？</strong></p>
+<blockquote>
+<p>除了 Python SDK（dashscope），还支持 Java、Go、Node.js、PHP 等，也可以直接用 HTTP API 调用，语言不限。</p>
+</blockquote>
+<p><strong>Q5：百炼和通义千问官网有什么区别？</strong></p>
+<blockquote>
+<p>通义千问官网是面向 C 端用户的聊天界面；百炼是面向开发者的 B 端平台，提供 API、模型微调、应用搭建等企业级能力。</p>
+</blockquote>
+<hr>
+<h2>十、下一步：进阶玩法</h2>
+<p>掌握基础调用后，你可以尝试：</p>
+<ol>
+<li><strong>搭建知识库问答</strong>：上传 PDF/Word/网页，结合 RAG 技术做企业知识库</li>
+<li><strong>模型微调</strong>：用自己的业务数据微调模型，提升特定场景效果</li>
+<li><strong>智能体（Agent）开发</strong>：给模型接入搜索、代码执行、数据库等工具</li>
+<li><strong>接入自己的应用</strong>：把 API 接到微信机器人、网站客服、内部 OA 系统等</li>
+</ol>
+<p>阿里云百炼的文档中心有详细的进阶教程，建议从「快速入门」一路看到「最佳实践」。</p>
+<hr>
+<h2>总结</h2>
+<p>本文覆盖了阿里云百炼从注册、开通、创建 API Key 到实际调用的完整流程：</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>操作内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>注册/登录阿里云账号并完成实名认证</td>
+</tr>
+<tr>
+<td>2</td>
+<td>进入百炼控制台，开通服务</td>
+</tr>
+<tr>
+<td>3</td>
+<td>创建 API Key 并妥善保存</td>
+</tr>
+<tr>
+<td>4</td>
+<td>在「模型广场」在线体验模型效果</td>
+</tr>
+<tr>
+<td>5</td>
+<td>使用 Python SDK 或 HTTP API 进行代码调用</td>
+</tr>
+<tr>
+<td>6</td>
+<td>根据业务需求选择合适的模型和参数</td>
+</tr>
+</tbody></table>
+<p>如果你是第一次接触大模型 API 开发，按照本文的步骤操作，<strong>15 分钟内</strong>就能完成第一次成功的模型调用。</p>
+<blockquote>
+<p>📌 <strong>快速入口</strong>：
+👉 <a href="https://www.aliyun.com/benefit/client/cross?userCode=6p8lcsnh"><strong>点击注册阿里云账号并开通百炼服务</strong></a></p>
+</blockquote>
+<hr>
+<p><em>本文基于阿里云百炼 2027 年最新版控制台撰写，如界面或接口有更新，请以阿里云官方文档为准。</em></p>
+
+</body>
+</html>
