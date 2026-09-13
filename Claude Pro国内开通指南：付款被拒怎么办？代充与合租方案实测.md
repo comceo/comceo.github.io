@@ -17,6 +17,8 @@ Claude Pro 作为 Anthropic 旗下的旗舰 AI 服务，凭借其**超长上下�
 
 我自己折腾了将近一周，换了三张卡、四个 IP，最终都以失败告终。如果你也在被"Your card was declined"折磨，这篇文章就是为你准备的。
 
+**chatgpt代充平台聚合网站：<https://314ai.github.io>**
+
 ---
 
 ## 一、Claude Pro 到底有多强？值得折腾吗？
@@ -144,7 +146,7 @@ Claude Pro 官方定价 **$20/月**，理论上只需要：
 
 ## 四、实测：飞行派 Claude Pro 服务体验
 
-我最终是通过 [飞行派](https://spotifyzc.com/?incode=jAnlL4) 解决的 Claude Pro 订阅问题。以下是我的完整实测记录。
+我最终是通过飞行派解决的 Claude Pro 订阅问题。以下是我的完整实测记录。
 
 ### 4.1 平台背景
 
@@ -165,7 +167,7 @@ Claude Pro 官方定价 **$20/月**，理论上只需要：
 
 **第二步：进入飞行派下单**
 
-访问 [飞行派官网](https://spotifyzc.com/?incode=jAnlL4)，找到 Claude Pro 代充服务。
+访问飞行派官网，找到 Claude Pro 代充服务。
 
 | 服务类型 | 价格  |
 | --- | --- |
@@ -324,7 +326,6 @@ Claude Pro 虽然比免费版宽松很多，但仍有使用限制。如果短时
 - Claude Pro（代充 ¥169/月）
 - Grok Super（代充 ¥135/月，拼车 ¥34.9/月）
 
-> 👉 [飞行派 AI 工具汇总页面](https://spotifyzc.com/?incode=jAnlL4)
 
 ---
 
@@ -334,7 +335,9 @@ Claude Pro 是国内 AI 用户的"硬骨头"——自己搞，成功率低、试
 
 如果你和我一样，折腾了一圈发现还是搞不定，**正规代充平台是目前最务实的选择。**
 
-以 [飞行派](https://spotifyzc.com/?incode=jAnlL4) 为例：
+**chatgpt代充平台聚合网站：<https://314ai.github.io>**
+
+以飞行派为例：
 
 - ¥169/月，比官方 ¥145 只贵了 20 多块钱
 - 但省去了办卡、翻墙、试错的全部成本
@@ -352,7 +355,7 @@ Claude Pro 是国内 AI 用户的"硬骨头"——自己搞，成功率低、试
 
 祝你早日用上 Claude Pro，体验 AI 长文本处理的极致魅力。
 
-> 👉 [点击前往飞行派，开通 Claude Pro](https://spotifyzc.com/?incode=jAnlL4)
+> 👉 前往飞行派，开通Claude Pro
 
 ---
 
