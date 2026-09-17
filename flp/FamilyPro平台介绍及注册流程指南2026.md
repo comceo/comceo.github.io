@@ -8,7 +8,7 @@
 
 ## 一、FamilyPro 是什么？
 
-FamilyPro（官网：[https://familypro.io?invite=LG4d7eca](https://familypro.io?invite=LG4d7eca)）是一个成立于 2024 年的**数字订阅共享平台**，其核心理念是：
+FamilyPro（官网入口：<https://314ai.github.io>）是一个成立于 2024 年的**数字订阅共享平台**，其核心理念是：
 
 > **"享受家庭计划价格，降低数字服务门槛"**
 
@@ -97,7 +97,7 @@ FamilyPro 的使用体验非常简洁，实测整个流程可在 **3 分钟内�
 
 ### 第一步：访问官网并注册账号
 
-打开 FamilyPro 官网 👉 [**https://familypro.io?invite=LG4d7eca**](https://familypro.io?invite=LG4d7eca)
+打开 FamilyPro官网入口：<https://314ai.github.io>
 
 点击右上角「注册」按钮，支持以下方式快速注册：
 
@@ -154,7 +154,7 @@ FamilyPro 的使用体验非常简洁，实测整个流程可在 **3 分钟内�
 FamilyPro 在安全和透明方面做了多重保障：
 
 - **安全支付**：所有交易通过加密安全通道处理，符合国际安全标准，不直接保存用户付款信息。
-- **售后支持**：遇到账号失效、密码变更等问题，可随时联系客服（official@familypro.io），平台承诺及时响应并协助解决。
+- **售后支持**：遇到账号失效、密码变更等问题，可随时联系客服，平台承诺及时响应并协助解决。
 - **退款政策**：部分产品支持服务中断全额退款，具体以各产品页面说明为准。
 - **隐私保护**：平台遵循严格的隐私政策，仅收集运营所必需的信息。
 
@@ -178,7 +178,7 @@ FamilyPro 通过规范化的共享订阅模式，让原本昂贵的正版数字�
 
 如果你每月在数字订阅上的开销已经让你感到压力，不妨试试 FamilyPro——**用一杯咖啡的钱，享受一整月的高级服务**。
 
-🔗 **立即注册体验**：[https://familypro.io?invite=LG4d7eca](https://familypro.io?invite=LG4d7eca)
+🔗 **立即注册体验**：官网入口：<https://314ai.github.io>
 
 ---
 
