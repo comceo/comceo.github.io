@@ -32,12 +32,12 @@
 
     <style>
         :root {
-            --primary-bg: #eef1f7;
-            --card-bg: rgba(255, 255, 255, 0.75);
+            --primary-bg: #0d1120;
+            --card-bg: rgba(255, 255, 255, 0.05);
             --accent-blue: #3b82f6;
-            --text-primary: #1e293b;
-            --text-secondary: #64748b;
-            --border-color: rgba(15, 23, 42, 0.08);
+            --text-primary: #e8ecf4;
+            --text-secondary: #98a2b8;
+            --border-color: rgba(255, 255, 255, 0.09);
         }
 
         * {
@@ -73,9 +73,9 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.16) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.13) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 40%, rgba(99, 102, 241, 0.10) 0%, transparent 40%);
+            background: radial-gradient(circle at 20% 80%, rgba(124, 108, 240, 0.30) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.20) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(56, 130, 246, 0.22) 0%, transparent 40%);
             animation: rotate 30s linear infinite;
         }
 
@@ -92,8 +92,8 @@
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+                linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
             background-size: 50px 50px;
             z-index: -1;
             pointer-events: none;
@@ -169,7 +169,7 @@
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 0.8rem;
-            background: linear-gradient(135deg, #1e293b 0%, #64748b 50%, #1e293b 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #b8c0d4 50%, #f8fafc 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -220,7 +220,7 @@
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
             display: flex;
             flex-direction: column;
         }
@@ -232,13 +232,13 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(15,23,42,0.15), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.16), transparent);
         }
 
         .product-card:hover {
             transform: translateY(-3px);
-            border-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 15px 30px rgba(15, 23, 42, 0.12);
+            border-color: rgba(255, 255, 255, 0.28);
+            box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
         }
 
         .card-header {
@@ -421,7 +421,7 @@
             content: '✓';
             width: 16px;
             height: 16px;
-            background: rgba(15, 23, 42, 0.06);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -571,8 +571,8 @@
     </style>
     <base target="_blank">
     <!-- 额外的SEO优化标签 -->
-    <meta name="theme-color" content="#eef1f7">
-    <meta name="msapplication-TileColor" content="#eef1f7">
+    <meta name="theme-color" content="#0d1120">
+    <meta name="msapplication-TileColor" content="#0d1120">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
@@ -695,6 +695,7 @@
 
 
 
+<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -1123,7 +1124,7 @@
             const currentScroll = window.pageYOffset;
 
             if (currentScroll > 50) {
-                header.style.background = 'rgba(255, 255, 255, 0.85)';
+                header.style.background = 'rgba(13, 17, 32, 0.8)';
                 header.style.backdropFilter = 'blur(20px)';
             } else {
                 header.style.background = 'transparent';
