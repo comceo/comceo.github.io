@@ -6,7 +6,7 @@
 
 ## 一、什么是银河录像局？
 
-**银河录像局**（官网入口：<https://nf.video/Y7SG6>）是一个专注于为中文用户提供海外 AI 服务中转与订阅的平台。它解决了国内用户无法直接访问 OpenAI、Midjourney 等海外服务的痛点，通过稳定的代理通道，让你无需科学上网即可使用这些强大的 AI 工具。
+**银河录像局**（网站入口：<https://314ai.github.io>）是一个专注于为中文用户提供海外 AI 服务中转与订阅的平台。它解决了国内用户无法直接访问 OpenAI、Midjourney 等海外服务的痛点，通过稳定的代理通道，让你无需科学上网即可使用这些强大的 AI 工具。
 
 平台目前支持多种 AI 服务的订阅，包括 ChatGPT Plus、Midjourney、Claude Pro 以及我们今天要讲的 **Codex API**。
 
@@ -18,7 +18,7 @@
 
 ### 第一步：访问银河录像局官网
 
-打开浏览器，输入官网地址：<https://nf.video/Y7SG6>，进入银河录像局首页。
+打开浏览器，输入<https://314ai.github.io>
 
 ### 第二步：注册/登录账号
 
@@ -95,7 +95,7 @@ print(response.choices[0].text)
 
 **核心要点回顾：**
 
-1. 访问官网 <https://nf.video/Y7SG6>
+1. 访问 <https://314ai.github.io>
 2. 注册登录账号
 3. 选择 Codex API 服务
 4. 挑选合适的包月套餐
