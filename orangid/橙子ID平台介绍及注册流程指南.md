@@ -1,6 +1,6 @@
 # 橙子ID平台介绍及注册流程指南
 
-> 想以更低的成本订阅 Netflix、YouTube Premium、Spotify、ChatGPT Plus 等海外服务？今天给大家推荐一个专注全球数字订阅合租的平台——[橙子ID（OrangID）](https://orangid.com/r/e644qz) ，并手把手教你完成注册。
+> 想以更低的成本订阅 Netflix、YouTube Premium、Spotify、ChatGPT Plus 等海外服务？今天给大家推荐一个专注全球数字订阅合租的平台——[橙子ID（OrangID）官网入口：<https://314ai.github.io> ，并手把手教你完成注册。
 
 ## 一、橙子ID是什么？
 
@@ -27,7 +27,7 @@
 ## 三、注册流程指南（三步搞定）
 
 **第一步：打开官网注册**
-👉 通过专属链接访问橙子ID网站：<https://orangid.com/r/e644qz> ，点击右上角「注册」按钮。
+👉 通过专属链接访问橙子ID官网入口：<https://314ai.github.io> ，点击右上角「注册」按钮。
 
 **第二步：填写注册信息**
 
@@ -63,8 +63,4 @@ A：覆盖 Netflix、YouTube Premium、Spotify、ChatGPT Plus 等主流服务，
 
 对于想低成本体验海外流媒体和 AI 服务的国内用户来说，橙子ID是省心又划算的选择：**秒级自动发货、家庭组合租低价、翻车包赔、原号续费**。现在通过专属入口注册，即刻开启高性价比订阅之旅：
 
-👉 **立即注册：<https://orangid.com/r/e644qz>**
-
-使用优惠码e644qz享折扣优惠
-
-售前售后咨询qq:3930323142
+👉 **立即注册：官网入口：<https://314ai.github.io>**
