@@ -1,7 +1,6 @@
 # OrangID平台介绍
 
-> 官网：<https://orangid.com/r/e644qz>
-> 使用优惠码：E644QZ享折扣优惠
+> 官网入口：<https://314ai.github.io>
 
 ## 一、平台是什么
 
